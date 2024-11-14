@@ -36,3 +36,11 @@
     transform: scale(1.05);  /* Memberikan efek zoom saat hover */
     transition: transform 0.3s ease-in-out; /* Animasi smooth */
 }
+
+.animate-marquee {
+    animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}

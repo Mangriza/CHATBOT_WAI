@@ -69,6 +69,46 @@
     </div>
 </div>
 
+<!-- Running Text Footer -->
+<footer class="bg-gray-800 text-white py-4 mt-10">
+    <div class="max-w-7xl mx-auto">
+        <div class="overflow-hidden">
+            <div class="whitespace-nowrap animate-marquee text-center text-sm text-gray-400">
+                <span>🌟 Join WAI Chatbot now for exclusive offers and the latest updates! 🌟 | 🌟 Enjoy personalized chatbot conversations and make your interactions smarter! 🌟</span>
+
+                <span>🌟 Join WAI Chatbot now for exclusive offers and the latest updates! 🌟 | 🌟 Enjoy personalized chatbot conversations and make your interactions smarter! 🌟</span>
+
+                <span>🌟 Join WAI Chatbot now for exclusive offers and the latest updates! 🌟 | 🌟 Enjoy personalized chatbot conversations and make your interactions smarter! 🌟</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Sign Up Section -->
+<section class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <!-- Kiri: Gambar chatting bot -->
+        <div class="w-full sm:w-1/2">
+            <img src="{{ asset('img/logo.png') }}" alt="Chatting with Bot" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+
+        <!-- Kanan: Teks Promosi & Button -->
+        <div class="w-full sm:w-1/2 pl-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Bergabunglah dengan WAI!</h2>
+            <p class="text-lg text-gray-600 mb-6">
+                Nikmati pengalaman interaktif dengan chatbot bergaya anime! Dapatkan solusi cepat dan personal dalam setiap percakapan. 
+                Daftar sekarang dan mulailah berinteraksi dengan WAI untuk pengalaman yang lebih menyenangkan!
+            </p>
+            <a href="/register" class="inline-block px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+                Daftar Sekarang
+            </a>
+        </div>
+    </div>
+</section>
+
 
 </main>
 
