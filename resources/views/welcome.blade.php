@@ -108,93 +108,7 @@
         </div>
     </div>
 </section>
-
-
 </main>
-
-<!-- Footer -->
-<footer class="bg-gray-700 text-white py-10 px-4">
-    <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-8">Our Partners</h2>
-
-        <!-- Logo Partner Section -->
-        <div class="flex justify-center items-center gap-10 flex-wrap">
-            <div>
-                <img src="{{ asset('img/logo.png') }}" alt="Partner 1" class="h-16 object-contain">
-            </div>
-            <div>
-                <img src="{{ asset('img/logo.png') }}" alt="Partner 2" class="h-16 object-contain">
-            </div>
-            <div>
-                <img src="{{ asset('img/logo.png') }}" alt="Partner 3" class="h-16 object-contain">
-            </div>
-            <div>
-                <img src="{{ asset('img/logo.png') }}" alt="Partner 4" class="h-16 object-contain">
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Fitur Aplikasi Chatbot -->
-<section class="bg-gray-100 py-10">
-    <div class="max-w-7xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-black mb-6">Fitur Utama Chatbot Kami</h2>
-        <p class="text-lg text-gray-700 mb-12">Nikmati pengalaman interaktif dengan chatbot bergaya anime yang siap membantu Anda kapan saja.</p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold mb-4">Chatbot Interaktif</h3>
-                <p class="text-gray-600">Nikmati percakapan yang menyenangkan dan interaktif dengan chatbot kami yang responsif dan pintar.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold mb-4">Personalisasi</h3>
-                <p class="text-gray-600">Sesuaikan gaya chatbot sesuai keinginan Anda, dari gaya anime hingga pilihan karakter lainnya.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-semibold mb-4">Tanya Jawab Cepat</h3>
-                <p class="text-gray-600">Dapatkan solusi cepat dan tepat untuk pertanyaan Anda dengan fitur tanya jawab otomatis.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Testimoni Pengguna -->
-<section class="bg-gray-200 py-10">
-    <div class="max-w-7xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-black mb-6">Testimoni Pengguna</h2>
-        <div class="flex justify-center gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs">
-                <p class="text-gray-600 italic">“Chatbot ini sangat membantu saya dalam mencari solusi cepat!”</p>
-                <p class="text-gray-800 font-semibold mt-4">- Andre, Pengguna Setia</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs">
-                <p class="text-gray-600 italic">“Saya suka karakter anime-nya yang sangat interaktif!”</p>
-                <p class="text-gray-800 font-semibold mt-4">- Lisa, Pengguna Baru</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Video Demonstrasi -->
-<section class="bg-white py-10">
-    <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-black mb-6">Tonton Demo Chatbot Kami</h2>
-        <video class="w-full h-auto rounded-lg shadow-lg" controls>
-            <source src="video-demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</section>
-
-<!-- Call to Action -->
-<section class="bg-gray-900 py-10">
-    <div class="max-w-7xl mx-auto text-center text-white">
-        <h2 class="text-3xl font-bold mb-6">Siap Mencoba Chatbot Kami?</h2>
-        <p class="text-lg mb-8">Unduh aplikasi atau coba chatbot kami langsung dan nikmati pengalaman yang tak terlupakan!</p>
-        <a href="/download" class="bg-white text-blue-600 py-3 px-6 rounded-lg text-lg font-semibold">Coba Sekarang</a>
-    </div>
-</section>
-
 <section class="bg-gray-800 text-white py-16 px-6">
     <div class="max-w-full mx-auto text-center">
         <h2 class="text-3xl font-bold mb-8">Meet Our AI Personalities</h2>
@@ -246,11 +160,90 @@
     </div>
 </section>
 
+<!-- Footer -->
+<footer class="bg-gray-700 text-white py-10 px-4">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Partners</h2>
+
+        <!-- Logo Partner Section -->
+        <div class="flex justify-center items-center gap-10 flex-wrap">
+            <div>
+                <img src="{{ asset('img/logo.png') }}" alt="Partner 1" class="h-16 object-contain">
+            </div>
+            <div>
+                <img src="{{ asset('img/logo.png') }}" alt="Partner 2" class="h-16 object-contain">
+            </div>
+            <div>
+                <img src="{{ asset('img/logo.png') }}" alt="Partner 3" class="h-16 object-contain">
+            </div>
+            <div>
+                <img src="{{ asset('img/logo.png') }}" alt="Partner 4" class="h-16 object-contain">
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
+<!-- Video Demonstrasi -->
+<section class="bg-white py-10">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-black mb-6">Tonton Demo Chatbot Kami</h2>
+        <video class="w-full h-auto rounded-lg shadow-lg" controls>
+            <source src="video-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
 
+<!-- Call to Action -->
+<section class="bg-gray-900 py-10">
+    <div class="max-w-7xl mx-auto text-center text-white">
+        <h2 class="text-3xl font-bold mb-6">Siap Mencoba Chatbot Kami?</h2>
+        <p class="text-lg mb-8">Unduh aplikasi atau coba chatbot kami langsung dan nikmati pengalaman yang tak terlupakan!</p>
+        <a href="/download" class="bg-white text-blue-600 py-3 px-6 rounded-lg text-lg font-semibold">Coba Sekarang</a>
+    </div>
+</section>
 
+<!-- Fitur Aplikasi Chatbot -->
+<section class="bg-gray-100 py-10">
+    <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-black mb-6">Fitur Utama Chatbot Kami</h2>
+        <p class="text-lg text-gray-700 mb-12">Nikmati pengalaman interaktif dengan chatbot bergaya anime yang siap membantu Anda kapan saja.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Chatbot Interaktif</h3>
+                <p class="text-gray-600">Nikmati percakapan yang menyenangkan dan interaktif dengan chatbot kami yang responsif dan pintar.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Personalisasi</h3>
+                <p class="text-gray-600">Sesuaikan gaya chatbot sesuai keinginan Anda, dari gaya anime hingga pilihan karakter lainnya.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Tanya Jawab Cepat</h3>
+                <p class="text-gray-600">Dapatkan solusi cepat dan tepat untuk pertanyaan Anda dengan fitur tanya jawab otomatis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimoni Pengguna -->
+<section class="bg-gray-200 py-10">
+    <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-black mb-6">Testimoni Pengguna</h2>
+        <div class="flex justify-center gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs">
+                <p class="text-gray-600 italic">“Chatbot ini sangat membantu saya dalam mencari solusi cepat!”</p>
+                <p class="text-gray-800 font-semibold mt-4">- Andre, Pengguna Setia</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs">
+                <p class="text-gray-600 italic">“Saya suka karakter anime-nya yang sangat interaktif!”</p>
+                <p class="text-gray-800 font-semibold mt-4">- Lisa, Pengguna Baru</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- FAQ Section -->
 <section class="py-16 px-6 bg-gray-100">
