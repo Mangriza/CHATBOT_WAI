@@ -100,47 +100,58 @@
 
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-10 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
-                <div>
-                    <h4 class="font-bold text-lg mb-4">Contact Us</h4>
-                    <ul>
-                        <li><a href="mailto:contact@wai.com" class="hover:text-[#0000FF]">Email: contact@wai.com</a></li>
-                        <li><a href="tel:+1234567890" class="hover:text-[#0000FF]">Phone: +1 (234) 567-890</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg mb-4">Follow Us</h4>
-                    <ul>
-                        <li><a href="https://www.instagram.com" class="hover:text-[#0000FF]" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.twitter.com" class="hover:text-[#0000FF]" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.facebook.com" class="hover:text-[#0000FF]" target="_blank">Facebook</a></li>
-                        <li><a href="https://www.linkedin.com" class="hover:text-[#0000FF]" target="_blank">LinkedIn</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg mb-4">Resources</h4>
-                    <ul>
-                        <li><a href="#" class="hover:text-[#0000FF]">Documentation</a></li>
-                        <li><a href="#" class="hover:text-[#0000FF]">Blog</a></li>
-                        <li><a href="#" class="hover:text-[#0000FF]">API Reference</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg mb-4">References</h4>
-                    <ul>
-                        <li><a href="#" class="hover:text-[#0000FF]">Tutorials</a></li>
-                        <li><a href="#" class="hover:text-[#0000FF]">Case Studies</a></li>
-                        <li><a href="#" class="hover:text-[#0000FF]">Whitepapers</a></li>
-                    </ul>
-                </div>
+<footer class="bg-gray-800 text-white py-10 px-4">
+    <div class="max-w-7xl mx-auto">
+        <!-- Top Section: Contact and Social Media Links -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 ml-10">
+            <!-- Contact Info -->
+            <div class="ml-4"> 
+                <h4 class="font-bold text-lg mb-4">Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:contact@wai.com" class="hover:text-[#0000FF]">Email: contact@wai.com</a></li>
+                    <li><a href="tel:+1234567890" class="hover:text-[#0000FF]">Phone: +1 (234) 567-890</a></li>
+                </ul>
             </div>
-            <div class="text-center">
-                <p class="text-sm mb-2">© 2024 WAI - All Rights Reserved</p>
-                <p class="text-sm">For inquiries, contact us at <a href="mailto:contact@wai.com" class="underline hover:text-[#0000FF]">contact@wai.com</a></p>
+
+            <!-- Social Media Links -->
+            <div class="ml-4"> 
+                <h4 class="font-bold text-lg mb-4">Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com" class="hover:text-[#0000FF]" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.twitter.com" class="hover:text-[#0000FF]" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.facebook.com" class="hover:text-[#0000FF]" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com" class="hover:text-[#0000FF]" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources Section -->
+            <div class="ml-4"> 
+                <h4 class="font-bold text-lg mb-4">Resources</h4>
+                <ul>
+                    <li><a href="#" class="hover:text-[#0000FF]">Documentation</a></li>
+                    <li><a href="#" class="hover:text-[#0000FF]">Blog</a></li>
+                    <li><a href="#" class="hover:text-[#0000FF]">API Reference</a></li>
+                </ul>
+            </div>
+
+            <!-- References Section -->
+            <div class="ml-4"> 
+                <h4 class="font-bold text-lg mb-4">References</h4>
+                <ul>
+                    <li><a href="#" class="hover:text-[#0000FF]">Tutorials</a></li>
+                    <li><a href="#" class="hover:text-[#0000FF]">Case Studies</a></li>
+                    <li><a href="#" class="hover:text-[#0000FF]">Whitepapers</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+
+        <!-- Bottom Section: Copyright -->
+        <div class="text-center">
+            <p class="text-sm mb-2">© 2024 WAI - All Rights Reserved</p>
+            <p class="text-sm">For inquiries, contact us at <a href="mailto:contact@wai.com" class="underline hover:text-[#0000FF]">contact@wai.com</a></p>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
