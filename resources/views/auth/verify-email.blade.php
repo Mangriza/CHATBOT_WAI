@@ -36,8 +36,8 @@
     <main class="py-16 px-6 bg-gray-100">
         <div class="max-w-9xl mx-auto">
             <div class="flex items-center justify-center space-x-12">
-                <!-- Logo Section -->
-                <img src="{{ asset('img/logo.png') }}" alt="Main Logo" class="w-45 h-45 object-contain">
+
+        
 
                 <!-- Email Verification Info -->
                 <div class="w-full max-w-3xl bg-white p-10 shadow-xl rounded-2xl">
