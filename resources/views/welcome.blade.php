@@ -4,28 +4,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>WAI - WIth AI</title>
+    <title>WAI - With AI</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Styles -->
-    @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @else
-    @endif
-    <link rel="stylesheet" href="/pat_chatbot/resources/css/style.css"> 
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
     <!-- Tailwind CSS (optional, if not using Vite for CSS) -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom JS (Pastikan path sesuai dengan lokasi file js di public/js) -->
+    <script src="{{ asset('js/scroll.js') }}"></script> <!-- Tambahkan path file JS di sini -->
 </head>
+
+
+
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <!-- Header -->
     <header class="flex justify-between items-center p-4 bg-gray-800 text-white">
         <!-- Logo & Name -->
         <div class="flex items-center space-x-3">
-            <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-20 w-30">
-            <span class="font-semibold text-xl">WIth AI</span>
+            <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-10 w-15">
+            <span class="font-semibold text-2xl">With AI</span>
         </div>
         <!-- Navigation (Login/Register) -->
         <div class="space-x-4">
@@ -50,53 +53,154 @@
     </div>
 </div>
 
-        <!-- Foto di bawah -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <!-- Foto di bawah -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <div class="text-center">
+        <img src="https://via.placeholder.com/250" alt="Foto 1" class="w-full h-64 object-cover rounded-lg shadow-lg">
+        <p class="mt-2 text-gray-600">Tampilan Antarmuka Chatbot - Mudah digunakan dan interaktif.</p>
+    </div>
+    <div class="text-center">
+        <img src="https://via.placeholder.com/250" alt="Foto 2" class="w-full h-64 object-cover rounded-lg shadow-lg">
+        <p class="mt-2 text-gray-600">Fitur Personalisasi - Sesuaikan gaya chatbot sesuai keinginan Anda.</p>
+    </div>
+    <div class="text-center">
+        <img src="https://via.placeholder.com/250" alt="Foto 3" class="w-full h-64 object-cover rounded-lg shadow-lg">
+        <p class="mt-2 text-gray-600">Percakapan dengan Chatbot - Interaksi yang menyenangkan dan responsif.</p>
+    </div>
+</div>
+
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-700 text-white py-10 px-4">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Partners</h2>
+
+        <!-- Logo Partner Section -->
+        <div class="flex justify-center items-center gap-10 flex-wrap">
             <div>
-                <img src="https://via.placeholder.com/250" alt="Foto 1" class="w-full h-64 object-cover rounded-lg shadow-lg">
+                <img src="{{ asset('img/logo.png') }}" alt="Partner 1" class="h-16 object-contain">
             </div>
             <div>
-                <img src="https://via.placeholder.com/250" alt="Foto 2" class="w-full h-64 object-cover rounded-lg shadow-lg">
+                <img src="{{ asset('img/logo.png') }}" alt="Partner 2" class="h-16 object-contain">
             </div>
             <div>
-                <img src="https://via.placeholder.com/250" alt="Foto 3" class="w-full h-64 object-cover rounded-lg shadow-lg">
+                <img src="{{ asset('img/logo.png') }}" alt="Partner 3" class="h-16 object-contain">
+            </div>
+            <div>
+                <img src="{{ asset('img/logo.png') }}" alt="Partner 4" class="h-16 object-contain">
             </div>
         </div>
     </div>
-</main>
+</footer>
 
+<!-- Fitur Aplikasi Chatbot -->
+<section class="bg-gray-100 py-10">
+    <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-black mb-6">Fitur Utama Chatbot Kami</h2>
+        <p class="text-lg text-gray-700 mb-12">Nikmati pengalaman interaktif dengan chatbot bergaya anime yang siap membantu Anda kapan saja.</p>
 
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Chatbot Interaktif</h3>
+                <p class="text-gray-600">Nikmati percakapan yang menyenangkan dan interaktif dengan chatbot kami yang responsif dan pintar.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Personalisasi</h3>
+                <p class="text-gray-600">Sesuaikan gaya chatbot sesuai keinginan Anda, dari gaya anime hingga pilihan karakter lainnya.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Tanya Jawab Cepat</h3>
+                <p class="text-gray-600">Dapatkan solusi cepat dan tepat untuk pertanyaan Anda dengan fitur tanya jawab otomatis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimoni Pengguna -->
+<section class="bg-gray-200 py-10">
+    <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-black mb-6">Testimoni Pengguna</h2>
+        <div class="flex justify-center gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs">
+                <p class="text-gray-600 italic">“Chatbot ini sangat membantu saya dalam mencari solusi cepat!”</p>
+                <p class="text-gray-800 font-semibold mt-4">- Andre, Pengguna Setia</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs">
+                <p class="text-gray-600 italic">“Saya suka karakter anime-nya yang sangat interaktif!”</p>
+                <p class="text-gray-800 font-semibold mt-4">- Lisa, Pengguna Baru</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Demonstrasi -->
+<section class="bg-white py-10">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-black mb-6">Tonton Demo Chatbot Kami</h2>
+        <video class="w-full h-auto rounded-lg shadow-lg" controls>
+            <source src="video-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="bg-gray-900 py-10">
+    <div class="max-w-7xl mx-auto text-center text-white">
+        <h2 class="text-3xl font-bold mb-6">Siap Mencoba Chatbot Kami?</h2>
+        <p class="text-lg mb-8">Unduh aplikasi atau coba chatbot kami langsung dan nikmati pengalaman yang tak terlupakan!</p>
+        <a href="/download" class="bg-white text-blue-600 py-3 px-6 rounded-lg text-lg font-semibold">Coba Sekarang</a>
+    </div>
+</section>
 
 <section class="bg-gray-800 text-white py-16 px-6">
-    <div class="max-w-3xl mx-auto text-center">
+    <div class="max-w-full mx-auto text-center">
         <h2 class="text-3xl font-bold mb-8">Meet Our AI Personalities</h2>
-        <div class="flex space-x-8 overflow-x-auto pb-8 scroll-smooth hide-scrollbar">
-            <!-- Sifa AI - The Empath -->
-            <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg">
+
+        <!-- Container untuk gambar dengan scrollbar -->
+        <div class="flex overflow-x-auto px-4" id="scroll-container">
+            <!-- Card 1 -->
+            <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
                 <img src="path/to/sifa_image.jpg" alt="Sifa AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Sifa AI - The Empath</h3>
-                <p>Sifa AI is an understanding companion, always ready to listen and offer comforting advice tailored to your emotional needs. Whether you're feeling stressed or joyful, Sifa adjusts to your mood.</p>
+                <p>Sifa AI is an understanding companion...</p>
             </div>
 
-            <!-- Darwin AI - The Thinker -->
-            <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg">
+            <!-- Card 2 -->
+            <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
                 <img src="path/to/darwin_image.jpg" alt="Darwin AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Darwin AI - The Thinker</h3>
-                <p>Darwin AI is analytical and logical, always seeking to solve problems with precision. He offers data-driven advice and explores different solutions to help you achieve your goals.</p>
+                <p>Darwin AI is analytical and logical...</p>
             </div>
 
-            <!-- A0pa AI - The Humorist -->
-            <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg">
+            <!-- Card 3 -->
+            <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
                 <img src="path/to/a0pa_image.jpg" alt="A0pa AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">A0pa AI - The Humorist</h3>
-                <p>A0pa AI brings humor and lightheartedness to every conversation. Whether you're feeling down or just need a laugh, A0pa's jokes and fun personality will brighten your day.</p>
+                <p>A0pa AI brings humor and lightheartedness...</p>
             </div>
 
-            <!-- Zara AI - The Mentor -->
-            <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg">
+            <!-- Card 4 -->
+            <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
                 <img src="path/to/zara_image.jpg" alt="Zara AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Zara AI - The Mentor</h3>
-                <p>Zara AI is a patient and wise guide, always ready to help you navigate challenges. She listens carefully and offers calm, constructive advice to ensure your success.</p>
+                <p>Zara AI is a patient and wise guide...</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+                <img src="path/to/sifa_image.jpg" alt="Sifa AI" class="w-full h-80 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-4">Sifa AI - The Empath</h3>
+                <p>Sifa AI is an understanding companion...</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+                <img src="path/to/darwin_image.jpg" alt="Darwin AI" class="w-full h-80 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-4">Darwin AI - The Thinker</h3>
+                <p>Darwin AI is analytical and logical...</p>
             </div>
         </div>
     </div>
@@ -104,10 +208,14 @@
 
 
 
+
+
+
+
 <!-- FAQ Section -->
 <section class="py-16 px-6 bg-gray-100">
     <div class="max-w-3xl mx-auto text-left">
-        <h2 class="text-4xl font-bold mb-8 text-black">Frequently Asked Questions</h2>
+        <h2 class="text-3xl font-bold mb-8 text-black">Frequently Asked Questions</h2>
         <div class="space-y-6 text-black text-xl">
             <!-- First FAQ -->
             <details class="text-left border-b-2 border-gray-300 pb-4">
