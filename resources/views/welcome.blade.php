@@ -312,13 +312,13 @@
 
 
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-10 px-4">
+   <!-- Footer -->
+<footer class="bg-gray-800 text-white py-10 px-4">
     <div class="max-w-7xl mx-auto">
         <!-- Top Section: Contact and Social Media Links -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 ml-10">
             <!-- Contact Info -->
-            <div>
+            <div class="ml-4"> 
                 <h4 class="font-bold text-lg mb-4">Contact Us</h4>
                 <ul>
                     <li><a href="mailto:contact@wai.com" class="hover:text-[#0000FF]">Email: contact@wai.com</a></li>
@@ -327,7 +327,7 @@
             </div>
 
             <!-- Social Media Links -->
-            <div>
+            <div class="ml-4"> 
                 <h4 class="font-bold text-lg mb-4">Follow Us</h4>
                 <ul>
                     <li><a href="https://www.instagram.com" class="hover:text-[#0000FF]" target="_blank">Instagram</a></li>
@@ -338,7 +338,7 @@
             </div>
 
             <!-- Resources Section -->
-            <div>
+            <div class="ml-4"> 
                 <h4 class="font-bold text-lg mb-4">Resources</h4>
                 <ul>
                     <li><a href="#" class="hover:text-[#0000FF]">Documentation</a></li>
@@ -348,7 +348,7 @@
             </div>
 
             <!-- References Section -->
-            <div>
+            <div class="ml-4"> 
                 <h4 class="font-bold text-lg mb-4">References</h4>
                 <ul>
                     <li><a href="#" class="hover:text-[#0000FF]">Tutorials</a></li>
@@ -365,6 +365,7 @@
         </div>
     </div>
 </footer>
+
 
 </body>
 </html>
