@@ -102,7 +102,7 @@
                 Nikmati pengalaman interaktif dengan chatbot bergaya anime! Dapatkan solusi cepat dan personal dalam setiap percakapan. 
                 Daftar sekarang dan mulailah berinteraksi dengan WAI untuk pengalaman yang lebih menyenangkan!
             </p>
-            <a href="/register" class="inline-block px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+            <a href="/register" class="inline-block px-6 py-3 bg-gray-600   text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors">
                 Daftar Sekarang
             </a>
         </div>
@@ -201,7 +201,7 @@
     <div class="max-w-7xl mx-auto text-center text-white">
         <h2 class="text-3xl font-bold mb-6">Siap Mencoba Chatbot Kami?</h2>
         <p class="text-lg mb-8">Unduh aplikasi atau coba chatbot kami langsung dan nikmati pengalaman yang tak terlupakan!</p>
-        <a href="/download" class="bg-white text-blue-600 py-3 px-6 rounded-lg text-lg font-semibold">Coba Sekarang</a>
+        <a href="/register" class="bg-white hover:bg-[#DCDCDC] text-blue-600 py-3 px-6 rounded-lg text-lg font-semibold hover:text-[#0000FF]">Coba Sekarang</a>
     </div>
 </section>
 
@@ -252,7 +252,7 @@
         <div class="space-y-6 text-black text-xl">
             <!-- First FAQ -->
             <details class="text-left border-b-2 border-gray-300 pb-4">
-                <summary class="font-semibold text-2xl cursor-pointer hover:text-[#003366] transition duration-200 w-full px-6 py-3">
+                <summary class="font-semibold text-xl cursor-pointer hover:text-[#0000FF] transition duration-200 w-full px-6 py-3">
                     What is WAI?
                 </summary>
                 <p class="mt-2 text-lg">WAI is an innovative platform designed to offer efficient solutions for your everyday tasks. It leverages cutting-edge technology to help you achieve your goals quickly and effectively.</p>
@@ -260,7 +260,7 @@
             
             <!-- Second FAQ -->
             <details class="text-left border-b-2 border-gray-300 pb-4">
-                <summary class="font-semibold text-2xl cursor-pointer hover:text-[#003366] transition duration-200 w-full px-6 py-3">
+                <summary class="font-semibold text-xl cursor-pointer hover:text-[#0000FF] transition duration-200 w-full px-6 py-3">
                     How can I register?
                 </summary>
                 <p class="mt-2 text-lg">You can register by clicking the "Register" button in the header or visiting the registration page. It takes just a few minutes to sign up and get started with all the features.</p>
@@ -268,7 +268,7 @@
 
             <!-- Third FAQ -->
             <details class="text-left border-b-2 border-gray-300 pb-4">
-                <summary class="font-semibold text-2xl cursor-pointer hover:text-[#003366] transition duration-200 w-full px-6 py-3">
+                <summary class="font-semibold text-xl cursor-pointer hover:text-[#0000FF] transition duration-200 w-full px-6 py-3">
                     What services do you offer?
                 </summary>
                 <p class="mt-2 text-lg">We offer various tools and services to streamline your workflow, including task management, data analysis, and automation solutions, all designed to enhance productivity.</p>
@@ -276,7 +276,7 @@
 
             <!-- Fourth FAQ -->
             <details class="text-left border-b-2 border-gray-300 pb-4">
-                <summary class="font-semibold text-2xl cursor-pointer hover:text-[#003366] transition duration-200 w-full px-6 py-3">
+                <summary class="font-semibold text-xl cursor-pointer hover:text-[#0000FF] transition duration-200 w-full px-6 py-3">
                     Is WAI available on mobile devices?
                 </summary>
                 <p class="mt-2 text-lg">Yes, WAI is fully optimized for mobile devices, allowing you to use all its features on the go. Simply visit our website or download the app from your device's store.</p>
@@ -284,15 +284,15 @@
 
             <!-- Fifth FAQ -->
             <details class="text-left border-b-2 border-gray-300 pb-4">
-                <summary class="font-semibold text-2xl cursor-pointer hover:text-[#003366] transition duration-200 w-full px-6 py-3">
+                <summary class="font-semibold text-xl cursor-pointer hover:text-[#0000FF] transition duration-200 w-full px-6 py-3">
                     How do I contact customer support?
                 </summary>
-                <p class="mt-2 text-lg">You can contact our support team through the "Contact Us" page, or email us directly at <a href="mailto:support@wai.com" class="underline text-[#003366]">support@wai.com</a>. Our team will respond to your inquiries as soon as possible.</p>
+                <p class="mt-2 text-lg">You can contact our support team through the "Contact Us" page, or email us directly at <a href="mailto:support@wai.com" class="underline text-[#0000FF]">support@wai.com</a>. Our team will respond to your inquiries as soon as possible.</p>
             </details>
 
             <!-- Sixth FAQ -->
             <details class="text-left border-b-2 border-gray-300 pb-4">
-                <summary class="font-semibold text-2xl cursor-pointer hover:text-[#003366] transition duration-200 w-full px-6 py-3">
+                <summary class="font-semibold text-xl cursor-pointer hover:text-[#0000FF] transition duration-200 w-full px-6 py-3">
                     Is there a free trial available?
                 </summary>
                 <p class="mt-2 text-lg">Yes, WAI offers a 14-day free trial so you can explore all the features before committing. You can start your trial by signing up on our website.</p>
@@ -300,7 +300,7 @@
 
             <!-- Seventh FAQ -->
             <details class="text-left border-b-2 border-gray-300 pb-4">
-                <summary class="font-semibold text-2xl cursor-pointer hover:text-[#003366] transition duration-200 w-full px-6 py-3">
+                <summary class="font-semibold text-xl cursor-pointer hover:text-[#0000FF] transition duration-200 w-full px-6 py-3">
                     Can I cancel my subscription anytime?
                 </summary>
                 <p class="mt-2 text-lg">Yes, you can cancel your subscription at any time by going to your account settings. There are no long-term commitments, and you can cancel without any penalties.</p>
@@ -321,8 +321,8 @@
             <div>
                 <h4 class="font-bold text-lg mb-4">Contact Us</h4>
                 <ul>
-                    <li><a href="mailto:contact@wai.com" class="hover:text-[#FF2D20]">Email: contact@wai.com</a></li>
-                    <li><a href="tel:+1234567890" class="hover:text-[#FF2D20]">Phone: +1 (234) 567-890</a></li>
+                    <li><a href="mailto:contact@wai.com" class="hover:text-[#0000FF]">Email: contact@wai.com</a></li>
+                    <li><a href="tel:+1234567890" class="hover:text-[#0000FF]">Phone: +1 (234) 567-890</a></li>
                 </ul>
             </div>
 
@@ -330,10 +330,10 @@
             <div>
                 <h4 class="font-bold text-lg mb-4">Follow Us</h4>
                 <ul>
-                    <li><a href="https://www.instagram.com" class="hover:text-[#FF2D20]" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.twitter.com" class="hover:text-[#FF2D20]" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.facebook.com" class="hover:text-[#FF2D20]" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.linkedin.com" class="hover:text-[#FF2D20]" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com" class="hover:text-[#0000FF]" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.twitter.com" class="hover:text-[#0000FF]" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.facebook.com" class="hover:text-[#0000FF]" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com" class="hover:text-[#0000FF]" target="_blank">LinkedIn</a></li>
                 </ul>
             </div>
 
@@ -341,9 +341,9 @@
             <div>
                 <h4 class="font-bold text-lg mb-4">Resources</h4>
                 <ul>
-                    <li><a href="#" class="hover:text-[#FF2D20]">Documentation</a></li>
-                    <li><a href="#" class="hover:text-[#FF2D20]">Blog</a></li>
-                    <li><a href="#" class="hover:text-[#FF2D20]">API Reference</a></li>
+                    <li><a href="#" class="hover:text-[#0000FF]">Documentation</a></li>
+                    <li><a href="#" class="hover:text-[#0000FF]">Blog</a></li>
+                    <li><a href="#" class="hover:text-[#0000FF]">API Reference</a></li>
                 </ul>
             </div>
 
@@ -351,9 +351,9 @@
             <div>
                 <h4 class="font-bold text-lg mb-4">References</h4>
                 <ul>
-                    <li><a href="#" class="hover:text-[#FF2D20]">Tutorials</a></li>
-                    <li><a href="#" class="hover:text-[#FF2D20]">Case Studies</a></li>
-                    <li><a href="#" class="hover:text-[#FF2D20]">Whitepapers</a></li>
+                    <li><a href="#" class="hover:text-[#0000FF]">Tutorials</a></li>
+                    <li><a href="#" class="hover:text-[#0000FF]">Case Studies</a></li>
+                    <li><a href="#" class="hover:text-[#0000FF]">Whitepapers</a></li>
                 </ul>
             </div>
         </div>
@@ -361,7 +361,7 @@
         <!-- Bottom Section: Copyright -->
         <div class="text-center">
             <p class="text-sm mb-2">© 2024 WAI - All Rights Reserved</p>
-            <p class="text-sm">For inquiries, contact us at <a href="mailto:contact@wai.com" class="underline hover:text-[#FF2D20]">contact@wai.com</a></p>
+            <p class="text-sm">For inquiries, contact us at <a href="mailto:contact@wai.com" class="underline hover:text-[#0000FF]">contact@wai.com</a></p>
         </div>
     </div>
 </footer>

@@ -16,17 +16,21 @@
     <!-- Tailwind CSS (optional, if not using Vite for CSS) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Custom JS -->
-    <script src="{{ asset('js/scroll.js') }}"></script>
+    <!-- Custom JS (Pastikan path sesuai dengan lokasi file js di public/js) -->
+    <script src="{{ asset('js/scroll.js') }}"></script> <!-- Tambahkan path file JS di sini -->
 </head>
+
+
 
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <!-- Header -->
     <header class="flex justify-between items-center p-4 bg-gray-800 text-white">
+        <!-- Logo & Name -->
         <div class="flex items-center space-x-3">
             <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-10 w-15">
             <span class="font-semibold text-2xl">With AI</span>
         </div>
+        <!-- Navigation (Login/Register) -->
         <div class="space-x-4">
             <a href="{{ route('login') }}" class="text-white hover:text-gray-400">Log In</a>
             <a href="{{ route('register') }}" class="text-white hover:text-gray-400">Register</a>
@@ -34,71 +38,48 @@
     </header>
 
     <!-- Main Section -->
-<main class="py-16 px-6 bg-gray-100">
+    <main class="py-16 px-6 bg-gray-100">
     <div class="max-w-7xl mx-auto">
-        <div class="flex items-center justify-between mb-10">
-            <div class="flex items-center space-x-4 flex-shrink-0">
-                <img src="{{ asset('img/logo.png') }}" alt="Main Logo" class="w-50 h-65 object-contain">
-            </div>
-            <!-- Login Form -->
-            <div class="max-w-xl mx-auto bg-white p-8 shadow-2xl rounded-lg">
-    <h2 class="text-3xl font-semibold mb-6 text-center text-gray-800">Log In to Your Account</h2>
-    
-    <form method="POST" action="{{ route('login') }}">
-    @csrf
-
-    <!-- Email Address -->
-    <div class="mb-6">
-        <label for="email" class="block text-sm font-semibold text-gray-500">Email</label>
-        <input id="email" type="email" name="email" class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none bg-gray-100 text-black" required autofocus autocomplete="username">
-        @error('email')
-            <p class="text-sm text-red-500">{{ $message }}</p>
-        @enderror
-    </div>
-
-    <!-- Password -->
-    <div class="mb-6">
-        <label for="password" class="block text-sm font-semibold text-gray-500">Password</label>
-        <input id="password" type="password" name="password" class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none bg-gray-100 text-black" required autocomplete="current-password">
-        @error('password')
-            <p class="text-sm text-red-500">{{ $message }}</p>
-        @enderror
-    </div>
-
-    <!-- Remember Me -->
-    <div class="block mt-4 mb-6">
-        <label for="remember_me" class="inline-flex items-center">
-            <input id="remember_me" type="checkbox" name="remember" class="text-indigo-600">
-            <span class="ml-2 text-sm text-gray-400">Remember me</span>
-        </label>
-    </div>
-
-    <!-- Submit Button -->
-    <div class="flex items-center justify-between mt-6">
-        <button type="submit" class="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-500 transition-all duration-200 ease-in-out focus:outline-none">
-            Log In
-        </button>
-        <a href="{{ route('password.request') }}" class="text-sm text-indigo-400 hover:text-indigo-300">Forgot your password?</a>
-    </div>
-</form>
-
-</div>
-
+    <div class="flex items-center justify-between mb-10">
+        <!-- Logo di kiri dengan flex-shrink-0 agar tidak mengecil -->
+        <div class="flex items-center space-x-4 flex-shrink-0">
+            <img src="{{ asset('img/logo.png') }}" alt="Main Logo" class="w-50 h-65 object-contain">
+        </div>
+        <!-- Teks "With AI" dan Deskripsi dalam dua bagian terpisah -->
+        <div>
+            <h1 class="text-8xl font-bold text-black">With AI</h1>
+            <p class="text-lg text-gray-700 mt-4">Nikmati pengalaman unik dengan WAI, aplikasi yang menyajikan chatbot bergaya anime, siap memberikan bantuan dan solusi efisien dalam setiap langkah Anda</p>
         </div>
     </div>
- 
+</div>
 
-</main>
+      <!-- Foto di bawah -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <div class="text-center">
+        <img src="https://via.placeholder.com/250" alt="Foto 1" class="w-full h-64 object-cover rounded-lg shadow-lg">
+        <p class="mt-2 text-gray-600">Tampilan Antarmuka Chatbot - Mudah digunakan dan interaktif.</p>
+    </div>
+    <div class="text-center">
+        <img src="https://via.placeholder.com/250" alt="Foto 2" class="w-full h-64 object-cover rounded-lg shadow-lg">
+        <p class="mt-2 text-gray-600">Fitur Personalisasi - Sesuaikan gaya chatbot sesuai keinginan Anda.</p>
+    </div>
+    <div class="text-center">
+        <img src="https://via.placeholder.com/250" alt="Foto 3" class="w-full h-64 object-cover rounded-lg shadow-lg">
+        <p class="mt-2 text-gray-600">Percakapan dengan Chatbot - Interaksi yang menyenangkan dan responsif.</p>
+    </div>
+</div>
 
 
 
-<!-- Footer -->
-<footer class="bg-gray-800 text-white py-10 px-4">
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 px-4">
     <div class="max-w-7xl mx-auto">
         <!-- Top Section: Contact and Social Media Links -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 ml-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
             <!-- Contact Info -->
-            <div class="ml-4"> 
+            <div>
                 <h4 class="font-bold text-lg mb-4">Contact Us</h4>
                 <ul>
                     <li><a href="mailto:contact@wai.com" class="hover:text-[#0000FF]">Email: contact@wai.com</a></li>
@@ -107,7 +88,7 @@
             </div>
 
             <!-- Social Media Links -->
-            <div class="ml-4"> 
+            <div>
                 <h4 class="font-bold text-lg mb-4">Follow Us</h4>
                 <ul>
                     <li><a href="https://www.instagram.com" class="hover:text-[#0000FF]" target="_blank">Instagram</a></li>
@@ -118,7 +99,7 @@
             </div>
 
             <!-- Resources Section -->
-            <div class="ml-4"> 
+            <div>
                 <h4 class="font-bold text-lg mb-4">Resources</h4>
                 <ul>
                     <li><a href="#" class="hover:text-[#0000FF]">Documentation</a></li>
@@ -128,7 +109,7 @@
             </div>
 
             <!-- References Section -->
-            <div class="ml-4"> 
+            <div>
                 <h4 class="font-bold text-lg mb-4">References</h4>
                 <ul>
                     <li><a href="#" class="hover:text-[#0000FF]">Tutorials</a></li>
@@ -145,7 +126,6 @@
         </div>
     </div>
 </footer>
-
 
 </body>
 </html>
