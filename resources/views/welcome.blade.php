@@ -30,6 +30,13 @@
             <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-10 w-15">
             <span class="font-semibold text-2xl">With AI</span>
         </div>
+        <div class="space-x-4 flex items-center">
+            <a href="#contact" class="text-white hover:text-gray-400">Contact</a>
+            <a href="#ai" class="text-white hover:text-gray-400">AI</a>
+            <a href="#faq" class="text-white hover:text-gray-400">FAQ</a>
+            <a href="#ulasan" class="text-white hover:text-gray-400">Ulasan</a>
+            <a href="#video" class="text-white hover:text-gray-400">Video</a>
+        </div>
         <!-- Navigation (Login/Register) -->
         <div class="space-x-4">
             <a href="{{ route('login') }}" class="text-white hover:text-gray-400">Log In</a>
@@ -112,7 +119,7 @@
     </div>
 </section>
 
-<section class="bg-gray-800 text-white py-16 px-6" data-aos="fade-up">
+<section class="bg-gray-800 text-white py-16 px-6" data-aos="fade-up" id="ai">
     <div class="max-w-full mx-auto text-center">
         <h2 class="text-3xl font-bold mb-8">Meet Our AI Personalities</h2>
 
@@ -189,7 +196,7 @@
 
 
 <!-- Video Demonstrasi -->
-<section class="bg-white py-10">
+<section class="bg-white py-10" id="video">
     <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-black mb-6">Tonton Demo Chatbot Kami</h2>
         <video class="w-full h-auto rounded-lg shadow-lg" controls>
@@ -209,7 +216,7 @@
 </section>
 
 <!-- Fitur Aplikasi Chatbot -->
-<section class="bg-gray-100 py-10" data-aos="fade-up">
+<section class="bg-gray-100 py-10" data-aos="fade-up" id="ulasan">
     <div class="max-w-7xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-black mb-6">Fitur Utama Chatbot Kami</h2>
         <p class="text-lg text-gray-700 mb-12">Nikmati pengalaman interaktif dengan chatbot bergaya anime yang siap membantu Anda kapan saja.</p>
@@ -249,7 +256,7 @@
 </section>
 
 <!-- FAQ Section -->
-<section class="py-16 px-6 bg-gray-100">
+<section class="py-16 px-6 bg-gray-100" id="faq">
     <div class="max-w-3xl mx-auto text-left">
         <h2 class="text-3xl font-bold mb-8 text-black">Frequently Asked Questions</h2>
         <div class="space-y-6 text-black text-xl">
@@ -316,7 +323,7 @@
 
 
    <!-- Footer -->
-<footer class="bg-gray-800 text-white py-10 px-4" data-aos="fade-in-up">
+<footer class="bg-gray-800 text-white py-10 px-4" data-aos="fade-in-up" id="contact">
     <div class="max-w-7xl mx-auto">
         <!-- Top Section: Contact and Social Media Links -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 ml-10">
