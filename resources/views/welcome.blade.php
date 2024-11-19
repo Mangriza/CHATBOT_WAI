@@ -35,6 +35,8 @@
             <a href="{{ route('login') }}" class="text-white hover:text-gray-400">Log In</a>
             <a href="{{ route('register') }}" class="text-white hover:text-gray-400">Register</a>
         </div>
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     </header>
 
     <!-- Main Section -->
@@ -43,18 +45,19 @@
     <div class="flex items-center justify-between mb-10">
         <!-- Logo di kiri dengan flex-shrink-0 agar tidak mengecil -->
         <div class="flex items-center space-x-4 flex-shrink-0">
-            <img src="{{ asset('img/logo.png') }}" alt="Main Logo" class="w-50 h-65 object-contain">
+        <img src="{{ asset('img/logo.png') }}" alt="Main Logo" class="w-50 h-65 object-contain" data-aos="fade-up">
+
         </div>
         <!-- Teks "With AI" dan Deskripsi dalam dua bagian terpisah -->
         <div>
-            <h1 class="text-8xl font-bold text-black">With AI</h1>
-            <p class="text-lg text-gray-700 mt-4">Nikmati pengalaman unik dengan WAI, aplikasi yang menyajikan chatbot bergaya anime, siap memberikan bantuan dan solusi efisien dalam setiap langkah Anda</p>
+            <h1 class="text-8xl font-bold text-black" data-aos="fade-left">With AI</h1>
+            <p class="text-lg text-gray-700 mt-4" data-aos="fade-right">Nikmati pengalaman unik dengan WAI, aplikasi yang menyajikan chatbot bergaya anime, siap memberikan bantuan dan solusi efisien dalam setiap langkah Anda</p>
         </div>
     </div>
 </div>
 
       <!-- Foto di bawah -->
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-8" data-aos="fade-up">
     <div class="text-center">
         <img src="https://via.placeholder.com/250" alt="Foto 1" class="w-full h-64 object-cover rounded-lg shadow-lg">
         <p class="mt-2 text-gray-600">Tampilan Antarmuka Chatbot - Mudah digunakan dan interaktif.</p>
@@ -70,7 +73,7 @@
 </div>
 
 <!-- Running Text Footer -->
-<footer class="bg-gray-800 text-white py-4 mt-10">
+<footer class="bg-gray-800 text-white py-4 mt-10" data-aos="fade-left">
     <div class="max-w-7xl mx-auto">
         <div class="overflow-hidden">
             <div class="whitespace-nowrap animate-marquee text-center text-sm text-gray-400">
@@ -96,7 +99,7 @@
         </div>
 
         <!-- Kanan: Teks Promosi & Button -->
-        <div class="w-full sm:w-1/2 pl-8">
+        <div class="w-full sm:w-1/2 pl-8" data-aos="fade-left">
             <h2 class="text-4xl font-bold text-gray-900 mb-4">Bergabunglah dengan WAI!</h2>
             <p class="text-lg text-gray-600 mb-6">
                 Nikmati pengalaman interaktif dengan chatbot bergaya anime! Dapatkan solusi cepat dan personal dalam setiap percakapan. 
@@ -108,8 +111,8 @@
         </div>
     </div>
 </section>
-</main>
-<section class="bg-gray-800 text-white py-16 px-6">
+
+<section class="bg-gray-800 text-white py-16 px-6" data-aos="fade-up">
     <div class="max-w-full mx-auto text-center">
         <h2 class="text-3xl font-bold mb-8">Meet Our AI Personalities</h2>
 
@@ -161,7 +164,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-gray-700 text-white py-10 px-4">
+<footer class="bg-gray-700 text-white py-10 px-4" data-aos="fade-up">
     <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-8">Our Partners</h2>
 
@@ -206,7 +209,7 @@
 </section>
 
 <!-- Fitur Aplikasi Chatbot -->
-<section class="bg-gray-100 py-10">
+<section class="bg-gray-100 py-10" data-aos="fade-up">
     <div class="max-w-7xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-black mb-6">Fitur Utama Chatbot Kami</h2>
         <p class="text-lg text-gray-700 mb-12">Nikmati pengalaman interaktif dengan chatbot bergaya anime yang siap membantu Anda kapan saja.</p>
@@ -229,7 +232,7 @@
 </section>
 
 <!-- Testimoni Pengguna -->
-<section class="bg-gray-200 py-10">
+<section class="bg-gray-200 py-10" data-aos="fade-up">
     <div class="max-w-7xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-black mb-6">Testimoni Pengguna</h2>
         <div class="flex justify-center gap-8">
@@ -251,7 +254,7 @@
         <h2 class="text-3xl font-bold mb-8 text-black">Frequently Asked Questions</h2>
         <div class="space-y-6 text-black text-xl">
             <!-- First FAQ -->
-            <details class="text-left border-b-2 border-gray-300 pb-4">
+            <details class="text-left border-b-2 border-gray-300 pb-4" data-aos="fade-right">
                 <summary class="font-semibold text-xl cursor-pointer hover:text-[#0000FF] transition duration-200 w-full px-6 py-3">
                     What is WAI?
                 </summary>
@@ -309,11 +312,11 @@
     </div>
 </section>
 
-
+</main>
 
 
    <!-- Footer -->
-<footer class="bg-gray-800 text-white py-10 px-4">
+<footer class="bg-gray-800 text-white py-10 px-4" data-aos="fade-in-up">
     <div class="max-w-7xl mx-auto">
         <!-- Top Section: Contact and Social Media Links -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 ml-10">
@@ -365,6 +368,16 @@
         </div>
     </div>
 </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  // Durasi animasi dalam milidetik
+    easing: 'ease-in-out',  // Jenis easing
+    once: true  // Animasi hanya terjadi sekali
+  });
+</script>
 
 
 </body>

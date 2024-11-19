@@ -1,3 +1,7 @@
+
+body {
+    background-color: #f9fafb; /* Warna terang */
+}
 /* Menghilangkan scrollbar default */
 #scroll-container {
     display: flex;
@@ -37,11 +41,75 @@
     transition: transform 0.3s ease-in-out; /* Animasi smooth */
 }
 
+/* Animasi untuk elemen yang akan muncul saat di-scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);  /* Mulai dari bawah */
+    transition: opacity 1s, transform 1s;
+}
+
+.animate-on-scroll.fadeInUp {
+    animation: fadeInUp 1s forwards;
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out;
+    background-color: rgba(255, 255, 255, 0.8);  /* Latar belakang lebih terang */
+}
+.fade-in-up {
+    animation: fadeInUp 1s ease-out;
+    opacity: 0.9;  /* Agak transparan untuk efek lembut */
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Mulai dari bawah */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.animate-on-scroll.fadeInLeft {
+    animation: fadeInLeft 1s forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-on-scroll.fadeInRight {
+    animation: fadeInRight 1s forwards;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Marquee animasi untuk teks */
 .animate-marquee {
     animation: marquee 15s linear infinite;
 }
+
 @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 }
-
