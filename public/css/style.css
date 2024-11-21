@@ -116,3 +116,76 @@ html {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 }
+
+/* Kontainer untuk scroll horizontal */
+.scroll-container {
+    display: flex;
+    gap: 1rem;  /* Jarak antar card */
+    overflow-x: auto;  /* Enable horizontal scroll */
+    padding: 1rem 0;  /* Padding atas dan bawah */
+    scroll-snap-type: x mandatory;  /* Memastikan scroll berhenti pada posisi card */
+    -webkit-overflow-scrolling: touch;  /* Memperbaiki scroll di perangkat sentuh */
+    width: 100%;  /* Menggunakan 100% lebar kontainer */
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px;  /* Ukuran scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);  /* Warna scrollbar */
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Style untuk setiap card */
+.scroll-container .card-item {
+    background-color: #2d2d2d;  /* Warna latar belakang card */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 16rem;  /* Lebar tetap untuk setiap card */
+    flex-shrink: 0;  /* Agar card tidak mengecil */
+    scroll-snap-align: start;  /* Menyusun card agar ter-snapping dengan benar */
+    transition: transform 0.3s ease-in-out;  /* Efek transisi saat hover */
+}
+
+.scroll-container .card-item:hover {
+    transform: scale(1.05);  /* Zoom sedikit saat hover */
+}
+
+/* Gambar dalam card */
+.scroll-container .card-item .card-image {
+    margin-bottom: 1rem;
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+    border-radius: 50%;  /* Membuat gambar bulat */
+}
+
+/* Judul card */
+.scroll-container .card-item .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+/* Deskripsi card */
+.scroll-container .card-item .card-description {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+/* Gambar dalam card */
+.scroll-container .card-item .card-image {
+    margin-bottom: 1rem;
+    height: 5rem;  /* Bisa sesuaikan ukuran tinggi */
+    width: 5rem;   /* Sesuaikan ukuran lebar */
+    object-fit: cover;  /* Gambar menutupi area tanpa distorsi */
+    border-radius: 50%;  /* Membuat gambar bulat */
+}
