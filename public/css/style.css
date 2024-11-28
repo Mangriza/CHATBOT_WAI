@@ -5,6 +5,43 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Style untuk scrollbar modern */
+body {
+    scrollbar-width: thin;
+    /* Untuk Firefox: membuat scrollbar lebih ramping */
+    scrollbar-color: #d9b3ff #f2e6ff;
+    /* Warna: thumb dan track */
+}
+
+/* Scrollbar untuk browser berbasis WebKit */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Lebar scrollbar */
+    height: 10px;
+    /* Tinggi scrollbar horizontal */
+}
+
+::-webkit-scrollbar-track {
+    background: #f2e6ff;
+    /* Warna track (latar belakang scrollbar) */
+    border-radius: 10px;
+    /* Membuat ujung membulat */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7f06f8;
+    /* Warna thumb (bagian yang digeser) */
+    border-radius: 10px;
+    /* Membuat thumb membulat */
+    border: 2px solid #f2e6ff;
+    /* Memberikan ruang antara thumb dan track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #cda6f7;
+    /* Warna thumb saat hover */
+}
+
 /* Menghilangkan scrollbar default */
 #scroll-container {
     display: flex;

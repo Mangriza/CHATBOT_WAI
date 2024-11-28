@@ -422,6 +422,23 @@
             mobileMenu.classList.toggle('hidden');
         });
     });
+
+    let isScrolling;
+
+// Fungsi untuk menampilkan scrollbar
+function showScrollbar() {
+    document.body.classList.add('show-scrollbar');
+
+    // Hapus scrollbar setelah beberapa waktu tanpa aktivitas gulir
+    clearTimeout(isScrolling);
+    isScrolling = setTimeout(() => {
+        document.body.classList.remove('show-scrollbar');
+    }, 1000); // 1000ms = 1 detik
+}
+
+// Event listener untuk mendeteksi gulir
+window.addEventListener('scroll', showScrollbar);
+
 </script>
 
 
