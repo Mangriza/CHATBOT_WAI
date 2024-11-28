@@ -24,27 +24,47 @@
 
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <!-- Header -->
-    <header class="flex justify-between items-center p-4 bg-gray-800 text-white">
-        <!-- Logo & Name -->
-        <div class="flex items-center space-x-3">
-            <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-10 w-15">
-            <span class="font-semibold text-2xl">With AI</span>
-        </div>
-        <div class="space-x-4 flex items-center">
-            <a href="#contact" class="text-white hover:text-gray-400">Contact</a>
-            <a href="#ai" class="text-white hover:text-gray-400">AI</a>
-            <a href="#faq" class="text-white hover:text-gray-400">FAQ</a>
-            <a href="#ulasan" class="text-white hover:text-gray-400">Ulasan</a>
-            <a href="#video" class="text-white hover:text-gray-400">Video</a>
-        </div>
-        <!-- Navigation (Login/Register) -->
-        <div class="space-x-4">
-            <a href="{{ route('login') }}" class="text-white hover:text-gray-400">Log In</a>
-            <a href="{{ route('register') }}" class="text-white hover:text-gray-400">Register</a>
-        </div>
-        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <header class="relative flex flex-wrap items-center justify-between p-4 bg-gray-800 text-white">
+    <!-- Logo & Name -->
+    <div class="flex items-center space-x-3">
+        <img src="{{ asset('img/putih.png') }}" alt="Logo" class="h-10 w-auto">
+    </div>
 
-    </header>
+    <!-- Navigation Menu (hidden on small screens) -->
+    <nav class="hidden md:flex space-x-4 items-center">
+        <a href="#contact" class="text-white hover:text-gray-400">Contact</a>
+        <a href="#ai" class="text-white hover:text-gray-400">AI</a>
+        <a href="#faq" class="text-white hover:text-gray-400">FAQ</a>
+        <a href="#ulasan" class="text-white hover:text-gray-400">Ulasan</a>
+        <a href="#video" class="text-white hover:text-gray-400">Video</a>
+    </nav>
+
+    <!-- Log In / Register (hidden on small screens) -->
+    <div class="hidden md:flex space-x-4">
+        <a href="{{ route('login') }}" class="text-white hover:text-gray-400">Log In</a>
+        <a href="{{ route('register') }}" class="text-white hover:text-gray-400">Register</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+    </button>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-gray-800 flex-col space-y-2 py-4 px-4 shadow-lg">
+        <a href="#contact" class="block text-white hover:text-gray-400">Contact</a>
+        <a href="#ai" class="block text-white hover:text-gray-400">AI</a>
+        <a href="#faq" class="block text-white hover:text-gray-400">FAQ</a>
+        <a href="#ulasan" class="block text-white hover:text-gray-400">Ulasan</a>
+        <a href="#video" class="block text-white hover:text-gray-400">Video</a>
+        <a href="{{ route('login') }}" class="block text-white hover:text-gray-400">Log In</a>
+        <a href="{{ route('register') }}" class="block text-white hover:text-gray-400">Register</a>
+    </div>
+</header>
+
+
 
     <!-- Main Section -->
     <main class="py-16 px-6 bg-gray-100">
@@ -52,16 +72,17 @@
     <div class="flex items-center justify-between mb-10">
         <!-- Logo di kiri dengan flex-shrink-0 agar tidak mengecil -->
         <div class="flex items-center space-x-4 flex-shrink-0">
-        <img src="{{ asset('img/logo.png') }}" alt="Main Logo" class="w-50 h-65 object-contain" data-aos="fade-up">
-
+            <img src="{{ asset('img/wai.png') }}" alt="Main Logo" class="w-80 h-48 object-contain" data-aos="fade-up">
         </div>
         <!-- Teks "With AI" dan Deskripsi dalam dua bagian terpisah -->
-        <div>
-            <h1 class="text-8xl font-bold text-black" data-aos="fade-left">With AI</h1>
-            <p class="text-lg text-gray-700 mt-4" data-aos="fade-right">Nikmati pengalaman unik dengan WAI, aplikasi yang menyajikan chatbot bergaya anime, siap memberikan bantuan dan solusi efisien dalam setiap langkah Anda</p>
+        <div class="pl-4">
+            <p class="text-lg text-gray-700 mt-4" data-aos="fade-right">
+                Nikmati pengalaman unik dengan WAI, aplikasi yang menyajikan chatbot bergaya anime, siap memberikan bantuan dan solusi efisien dalam setiap langkah Anda
+            </p>
         </div>
     </div>
 </div>
+
 
       <!-- Foto di bawah -->
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-8" data-aos="fade-up">
@@ -384,6 +405,15 @@
     easing: 'ease-in-out',  // Jenis easing
     once: true  // Animasi hanya terjadi sekali
   });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        toggleButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
 </script>
 
 
