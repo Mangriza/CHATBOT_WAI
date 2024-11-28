@@ -24,43 +24,43 @@
 
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <!-- Header -->
-    <header class="relative flex flex-wrap items-center justify-between p-4 bg-gray-800 text-white">
+    <header class="relative flex flex-wrap items-center justify-between p-4 bg-white text-gray-700">
     <!-- Logo & Name -->
     <div class="flex items-center space-x-3">
-        <img src="{{ asset('img/putih.png') }}" alt="Logo" class="h-10 w-auto">
+        <img src="{{ asset('img/wai.png') }}" alt="Logo" class="h-10 w-auto">
     </div>
 
     <!-- Navigation Menu (hidden on small screens) -->
     <nav class="hidden md:flex space-x-4 items-center">
-        <a href="#contact" class="text-white hover:text-gray-400">Contact</a>
-        <a href="#ai" class="text-white hover:text-gray-400">AI</a>
-        <a href="#faq" class="text-white hover:text-gray-400">FAQ</a>
-        <a href="#ulasan" class="text-white hover:text-gray-400">Ulasan</a>
-        <a href="#video" class="text-white hover:text-gray-400">Video</a>
+        <a href="#contact" class="text-gray-700 hover:text-purple-500">Contact</a>
+        <a href="#ai" class="text-gray-700 hover:text-purple-500">AI</a>
+        <a href="#faq" class="text-gray-700 hover:text-purple-500">FAQ</a>
+        <a href="#ulasan" class="text-gray-700 hover:text-purple-500">Ulasan</a>
+        <a href="#video" class="text-gray-700 hover:text-purple-500">Video</a>
     </nav>
 
     <!-- Log In / Register (hidden on small screens) -->
     <div class="hidden md:flex space-x-4">
-        <a href="{{ route('login') }}" class="text-white hover:text-gray-400">Log In</a>
-        <a href="{{ route('register') }}" class="text-white hover:text-gray-400">Register</a>
+        <a href="{{ route('login') }}" class="text-gray-700 hover:text-purple-500">Log In</a>
+        <a href="{{ route('register') }}" class="text-gray-700 hover:text-purple-500">Register</a>
     </div>
 
     <!-- Mobile Menu Button -->
-    <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
     </button>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-gray-800 flex-col space-y-2 py-4 px-4 shadow-lg">
-        <a href="#contact" class="block text-white hover:text-gray-400">Contact</a>
-        <a href="#ai" class="block text-white hover:text-gray-400">AI</a>
-        <a href="#faq" class="block text-white hover:text-gray-400">FAQ</a>
-        <a href="#ulasan" class="block text-white hover:text-gray-400">Ulasan</a>
-        <a href="#video" class="block text-white hover:text-gray-400">Video</a>
-        <a href="{{ route('login') }}" class="block text-white hover:text-gray-400">Log In</a>
-        <a href="{{ route('register') }}" class="block text-white hover:text-gray-400">Register</a>
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-gray-300 flex-col space-y-2 py-4 px-4 shadow-lg">
+        <a href="#contact" class="block text-gray-700 hover:text-purple-500">Contact</a>
+        <a href="#ai" class="block text-gray-700 hover:text-purple-500">AI</a>
+        <a href="#faq" class="block text-gray-700 hover:text-purple-500">FAQ</a>
+        <a href="#ulasan" class="block text-gray-700 hover:text-purple-500">Ulasan</a>
+        <a href="#video" class="block text-gray-700 hover:text-purple-500">Video</a>
+        <a href="{{ route('login') }}" class="block text-gray-700 hover:text-purple-500">Log In</a>
+        <a href="{{ route('register') }}" class="block text-gray-700 hover:text-purple-500">Register</a>
     </div>
 </header>
 
@@ -260,21 +260,29 @@
 </section>
 
 <!-- Testimoni Pengguna -->
+<!-- Testimoni Pengguna -->
 <section class="bg-gray-200 py-10" data-aos="fade-up">
     <div class="max-w-7xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-black mb-6">Testimoni Pengguna</h2>
-        <div class="flex justify-center gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs">
-                <p class="text-gray-600 italic">“Chatbot ini sangat membantu saya dalam mencari solusi cepat!”</p>
-                <p class="text-gray-800 font-semibold mt-4">- Andre, Pengguna Setia</p>
+        <p class="text-lg text-gray-700 mb-12">Dengar pendapat pengguna kami tentang pengalaman menggunakan WAI.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Andre</h3>
+                <p class="text-gray-600">“Chatbot ini sangat membantu saya dalam mencari solusi cepat!”</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs">
-                <p class="text-gray-600 italic">“Saya suka karakter anime-nya yang sangat interaktif!”</p>
-                <p class="text-gray-800 font-semibold mt-4">- Lisa, Pengguna Baru</p>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Lisa</h3>
+                <p class="text-gray-600">“Saya suka karakter anime-nya yang sangat interaktif!”</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Dina</h3>
+                <p class="text-gray-600">“Fitur personalisasinya membuat chatbot ini terasa lebih hidup.”</p>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- FAQ Section -->
 <section class="py-16 px-6 bg-gray-100" id="faq">

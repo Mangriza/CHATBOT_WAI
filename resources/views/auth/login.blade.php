@@ -22,30 +22,24 @@
 
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <!-- Header -->
-    <header class="flex justify-between items-center p-4 bg-gray-800 text-white">
+    <header class="flex justify-between items-center p-4 bg-white text-white">
         <div class="flex items-center space-x-3">
-            <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-10 w-15">
-            <span class="font-semibold text-2xl">With AI</span>
+            <img src="{{ asset('img/wai.png') }}" alt="Logo" class="h-10 w-15">
         </div>
         <div class="space-x-4">
-            <a href="{{ route('login') }}" class="text-white hover:text-gray-400">Log In</a>
-            <a href="{{ route('register') }}" class="text-white hover:text-gray-400">Register</a>
+            <a href="{{ route('login') }}" class="text-black hover:text-gray-400">Log In</a>
+            <a href="{{ route('register') }}" class="text-black hover:text-gray-400">Register</a>
         </div>
     </header>
 
     <!-- Main Section -->
 <main class="py-16 px-6 bg-gray-100">
-    <div class="max-w-7xl mx-auto">
-        <div class="flex items-center justify-between mb-10">
-            <div class="flex items-center space-x-4 flex-shrink-0">
-                <img src="{{ asset('img/logo.png') }}" alt="Main Logo" class="w-50 h-65 object-contain">
-            </div>
-            <!-- Login Form -->
-            <div class="max-w-xl mx-auto bg-white p-8 shadow-2xl rounded-lg">
-    <h2 class="text-3xl font-semibold mb-6 text-center text-gray-800">Log In to Your Account</h2>
-    
-    <form method="POST" action="{{ route('login') }}">
-    @csrf
+<div class="max-w-2xl mx-auto bg-white p-10 shadow-2xl rounded-lg flex flex-col items-center">
+    <img src="{{ asset('img/wai.png') }}" alt="Main Logo" class="w-48 h-40 object-contain mb-8">
+    <h2 class="text-4xl font-semibold mb-8 text-center text-gray-800">Log In to Your Account</h2>
+    <form method="POST" action="{{ route('login') }}" class="w-full">
+        @csrf
+
 
     <!-- Email Address -->
     <div class="mb-6">
@@ -75,9 +69,10 @@
 
     <!-- Submit Button -->
     <div class="flex items-center justify-between mt-6">
-        <button type="submit" class="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-500 transition-all duration-200 ease-in-out focus:outline-none">
+            <button type="submit" class="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-purple-500 transition-all duration-200 ease-in-out focus:outline-none">
             Log In
         </button>
+
         <a href="{{ route('password.request') }}" class="text-sm text-indigo-400 hover:text-indigo-300">Forgot your password?</a>
     </div>
 </form>
