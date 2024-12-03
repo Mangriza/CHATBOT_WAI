@@ -85,14 +85,15 @@
     @enderror
 </div>
 
+<!-- Remember Me and Forgot Password -->
+<div class="flex items-center justify-between mt-4 mb-6">
+    <label for="remember_me" class="inline-flex items-center">
+        <input id="remember_me" type="checkbox" name="remember" class="text-indigo-600">
+        <span class="ml-2 text-sm text-gray-400">Remember me</span>
+    </label>
+    <a href="{{ route('password.request') }}" class="text-sm text-indigo-400 hover:text-indigo-300">Forget Password?</a>
+</div>
 
-        <!-- Remember Me -->
-        <div class="block mt-4 mb-6">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" name="remember" class="text-indigo-600">
-                <span class="ml-2 text-sm text-gray-400">Remember me</span>
-            </label>
-        </div>
 
         <!-- Submit Button -->
         <div class="flex items-center justify-between mt-6">
@@ -100,7 +101,7 @@
                 Log In
             </button>
 
-            <a href="{{ route('password.request') }}" class="text-sm text-indigo-400 hover:text-indigo-300">Forgot your password?</a>
+            <a href="{{ route('register') }}" class="text-sm text-indigo-400 hover:text-indigo-300">Not Registered?</a>
         </div>
     </form>
 </div>
