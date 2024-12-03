@@ -51,7 +51,7 @@
     <!-- Main Section -->
 <main class="py-16 px-6 bg-gray-100">
 <div class="max-w-2xl mx-auto bg-white p-10 shadow-2xl rounded-lg flex flex-col items-center">
-    <img src="{{ asset('img/wai.png') }}" alt="Main Logo" class="w-48 h-40 object-contain mb-8">
+    <img src="{{ asset('img/LOGO_DOANG.png') }}" alt="Main Logo" class="w-48 h-40 object-contain mb-8">
     <h2 class="text-4xl font-semibold mb-8 text-center text-gray-800">Create Your Account</h2>
     <form method="POST" action="{{ route('register') }}" class="w-full">
         @csrf
