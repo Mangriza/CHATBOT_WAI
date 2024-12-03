@@ -21,16 +21,31 @@
 
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <!-- Header -->
-    <header class="flex justify-between items-center p-4 bg-gray-800 text-white">
-        <div class="flex items-center space-x-3">
-            <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-10 w-15">
-            <span class="font-semibold text-2xl">With AI</span>
-        </div>
-        <div class="space-x-4">
-            <a href="{{ route('login') }}" class="text-white hover:text-gray-400">Log In</a>
-            <a href="{{ route('register') }}" class="text-white hover:text-gray-400">Register</a>
-        </div>
-    </header>
+<header class="relative flex flex-wrap items-center justify-between p-4 bg-white text-gray-700">
+    <!-- Logo & Name -->
+    <div class="flex items-center space-x-3">
+        <img src="{{ asset('img/WAI.png') }}" alt="Logo" class="h-10 w-auto">
+    </div>
+
+    <!-- Log In / Register (hidden on small screens) -->
+    <div class="hidden md:flex space-x-4">
+        <a href="{{ route('login') }}" class="text-gray-700 hover:text-purple-500">Log In</a>
+        <a href="{{ route('register') }}" class="text-gray-700 hover:text-purple-500">Register</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+    </button>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-gray-300 flex-col space-y-2 py-4 px-4 shadow-lg">
+        <a href="{{ route('login') }}" class="block text-gray-700 hover:text-purple-500">Log In</a>
+        <a href="{{ route('register') }}" class="block text-gray-700 hover:text-purple-500">Register</a>
+    </div>
+</header>
 
     <!-- Main Section -->
     <main class="py-16 px-6 bg-gray-100">
@@ -130,5 +145,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

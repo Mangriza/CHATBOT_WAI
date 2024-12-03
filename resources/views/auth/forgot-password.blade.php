@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>WAI - With AI</title>
 
     <!-- Fonts -->
@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS (optional, if not using Vite for CSS) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Custom JS -->
@@ -22,59 +22,73 @@
 
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <!-- Header -->
-    <header class="flex justify-between items-center p-4 bg-gray-800 text-white">
-        <div class="flex items-center space-x-3">
-            <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-10 w-15">
-            <span class="font-semibold text-2xl">With AI</span>
-        </div>
-        <div class="space-x-4">
-            <a href="{{ route('login') }}" class="text-white hover:text-gray-400">Log In</a>
-            <a href="{{ route('register') }}" class="text-white hover:text-gray-400">Register</a>
-        </div>
-    </header>
+<header class="relative flex flex-wrap items-center justify-between p-4 bg-white text-gray-700">
+    <!-- Logo & Name -->
+    <div class="flex items-center space-x-3">
+        <img src="{{ asset('img/WAI.png') }}" alt="Logo" class="h-10 w-auto">
+    </div>
 
-    <!-- Main Section for Forgot Password -->
-    <main class="py-16 px-6 bg-gray-100">
-        <div class="max-w-9xl mx-auto">
-            <div class="flex items-center justify-center space-x-12">
-                <!-- Logo Section -->
-                <img src="{{ asset('img/logo.png') }}" alt="Main Logo" class="w-45 h-45 object-contain">
+    <!-- Log In / Register (hidden on small screens) -->
+    <div class="hidden md:flex space-x-4">
+        <a href="{{ route('login') }}" class="text-gray-700 hover:text-purple-500">Log In</a>
+        <a href="{{ route('register') }}" class="text-gray-700 hover:text-purple-500">Register</a>
+    </div>
 
-                <!-- Forgot Password Form -->
-                <div class="w-full max-w-3xl bg-white p-10 shadow-xl rounded-2xl">
-                    <h2 class="text-2xl font-semibold mb-8 text-center text-gray-800">Forgot Your Password?</h2>
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+    </button>
 
-                    <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-                        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-gray-300 flex-col space-y-2 py-4 px-4 shadow-lg">
+        <a href="{{ route('login') }}" class="block text-gray-700 hover:text-purple-500">Log In</a>
+        <a href="{{ route('register') }}" class="block text-gray-700 hover:text-purple-500">Register</a>
+    </div>
+</header>
+
+    <!-- Main Section -->
+<main class="py-16 px-6 bg-gray-100">
+<div class="max-w-2xl mx-auto bg-white p-10 shadow-2xl rounded-lg flex flex-col items-center">
+    <img src="{{ asset('img/LOGO_DOANG.png') }}" alt="Main Logo" class="w-48 h-40 object-contain mb-8">
+    <h2 class="text-4xl font-semibold mb-8 text-center text-gray-800">Forget Your Password?</h2>
+
+    <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
+                        {{ __('No Problem! We will help you by sending you an e-mail to reset your password.') }}
                     </div>
+    <form method="POST" action="{{ route('password.email') }}" class="w-full">
+        @csrf
 
-                    <!-- Session Status -->
-                    <x-auth-session-status class="mb-4" :status="session('status')" />
+        <!-- Session Status -->
 
-                    <form method="POST" action="{{ route('password.email') }}">
-                        @csrf
+        <x-auth-session-status class="mb-4" :status="session('status')" />
 
-                        <!-- Email Address -->
-                        <div class="mb-6">
-                            <label for="email" class="block text-base font-medium text-gray-700">Email</label>
-                            <input id="email" type="email" name="email" :value="old('email')" class="w-full mt-3 px-5 py-3 border border-gray-300 rounded-lg focus:ring-4 focus:ring-indigo-500 focus:outline-none bg-gray-50 text-gray-800" required autofocus />
-                            @error('email')
-                                <p class="text-sm text-red-500 mt-2">{{ $message }}</p>
-                            @enderror
-                        </div>
-
-                        <div class="flex items-center justify-end mt-4">
-                            <button type="submit" class="px-6 py-3 bg-gray-600 text-white rounded-lg text-base font-medium hover:bg-gray-700 transition-all duration-200 ease-in-out focus:outline-none">
-                                {{ __('Email Password Reset Link') }}
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <!-- Email Address -->
+        <div class="mb-6">
+            <label for="email" class="block text-sm font-semibold text-gray-500">Email</label>
+            <input id="email" type="email" name="email" class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none bg-gray-100 text-black" required autofocus autocomplete="username">
+            @error('email')
+                <p class="text-sm text-red-500">{{ $message }}</p>
+            @enderror
         </div>
-    </main>
 
-  <!-- Footer -->
+        <!-- Submit Button -->
+        <div class="flex items-center justify-between mt-6">
+                <button type="submit" class="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-purple-500 transition-all duration-200 ease-in-out focus:outline-none">
+                Send Reset Email
+            </button>
+        </div>
+    </form>
+</div>
+
+        </div>
+    </div>
+ 
+
+</main>
+
+<!-- Footer -->
 <footer class="bg-gray-800 text-white py-10 px-4">
     <div class="max-w-7xl mx-auto">
         <!-- Top Section: Contact and Social Media Links -->
@@ -128,7 +142,13 @@
     </div>
 </footer>
 
+<script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
 
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
-
 </html>
