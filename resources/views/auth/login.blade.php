@@ -22,15 +22,31 @@
 
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <!-- Header -->
-    <header class="flex justify-between items-center p-4 bg-white text-white">
-        <div class="flex items-center space-x-3">
-            <img src="{{ asset('img/wai.png') }}" alt="Logo" class="h-10 w-15">
-        </div>
-        <div class="space-x-4">
-            <a href="{{ route('login') }}" class="text-black hover:text-gray-400">Log In</a>
-            <a href="{{ route('register') }}" class="text-black hover:text-gray-400">Register</a>
-        </div>
-    </header>
+<header class="relative flex flex-wrap items-center justify-between p-4 bg-white text-gray-700">
+    <!-- Logo & Name -->
+    <div class="flex items-center space-x-3">
+        <img src="{{ asset('img/WAI.png') }}" alt="Logo" class="h-10 w-auto">
+    </div>
+
+    <!-- Log In / Register (hidden on small screens) -->
+    <div class="hidden md:flex space-x-4">
+        <a href="{{ route('login') }}" class="text-gray-700 hover:text-purple-500">Log In</a>
+        <a href="{{ route('register') }}" class="text-gray-700 hover:text-purple-500">Register</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+    </button>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-gray-300 flex-col space-y-2 py-4 px-4 shadow-lg">
+        <a href="{{ route('login') }}" class="block text-gray-700 hover:text-purple-500">Log In</a>
+        <a href="{{ route('register') }}" class="block text-gray-700 hover:text-purple-500">Register</a>
+    </div>
+</header>
 
     <!-- Main Section -->
 <main class="py-16 px-6 bg-gray-100">
@@ -40,43 +56,53 @@
     <form method="POST" action="{{ route('login') }}" class="w-full">
         @csrf
 
+        <!-- Email Address -->
+        <div class="mb-6">
+            <label for="email" class="block text-sm font-semibold text-gray-500">Email</label>
+            <input id="email" type="email" name="email" class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none bg-gray-100 text-black" required autofocus autocomplete="username">
+            @error('email')
+                <p class="text-sm text-red-500">{{ $message }}</p>
+            @enderror
+        </div>
 
-    <!-- Email Address -->
-    <div class="mb-6">
-        <label for="email" class="block text-sm font-semibold text-gray-500">Email</label>
-        <input id="email" type="email" name="email" class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none bg-gray-100 text-black" required autofocus autocomplete="username">
-        @error('email')
-            <p class="text-sm text-red-500">{{ $message }}</p>
-        @enderror
+        <!-- Password -->
+<div class="mb-6 relative">
+    <label for="password" class="block text-sm font-semibold text-gray-500 mb-2">Password</label>
+    <div class="relative flex items-center">
+        <!-- Input Password -->
+        <input id="password" type="password" name="password" 
+               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none bg-gray-100 text-black" 
+               required autocomplete="current-password">
+        <!-- Icon Mata -->
+        <span id="toggle-password" class="absolute right-3 flex items-center cursor-pointer text-gray-500">
+            <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 4.5C7.305 4.5 3.403 7.274 2 12c1.403 4.726 5.305 7.5 10 7.5s8.597-2.774 10-7.5C20.597 7.274 16.695 4.5 12 4.5zM12 16.5c-2.485 0-4.5-2.015-4.5-4.5s2.015-4.5 4.5-4.5 4.5 2.015 4.5 4.5-2.015 4.5-4.5 4.5zM12 9a3 3 0 100 6 3 3 0 000-6z" />
+            </svg>
+        </span>
     </div>
+    @error('password')
+        <p class="text-sm text-red-500 mt-1">{{ $message }}</p>
+    @enderror
+</div>
 
-    <!-- Password -->
-    <div class="mb-6">
-        <label for="password" class="block text-sm font-semibold text-gray-500">Password</label>
-        <input id="password" type="password" name="password" class="w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none bg-gray-100 text-black" required autocomplete="current-password">
-        @error('password')
-            <p class="text-sm text-red-500">{{ $message }}</p>
-        @enderror
-    </div>
 
-    <!-- Remember Me -->
-    <div class="block mt-4 mb-6">
-        <label for="remember_me" class="inline-flex items-center">
-            <input id="remember_me" type="checkbox" name="remember" class="text-indigo-600">
-            <span class="ml-2 text-sm text-gray-400">Remember me</span>
-        </label>
-    </div>
+        <!-- Remember Me -->
+        <div class="block mt-4 mb-6">
+            <label for="remember_me" class="inline-flex items-center">
+                <input id="remember_me" type="checkbox" name="remember" class="text-indigo-600">
+                <span class="ml-2 text-sm text-gray-400">Remember me</span>
+            </label>
+        </div>
 
-    <!-- Submit Button -->
-    <div class="flex items-center justify-between mt-6">
-            <button type="submit" class="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-purple-500 transition-all duration-200 ease-in-out focus:outline-none">
-            Log In
-        </button>
+        <!-- Submit Button -->
+        <div class="flex items-center justify-between mt-6">
+                <button type="submit" class="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-purple-500 transition-all duration-200 ease-in-out focus:outline-none">
+                Log In
+            </button>
 
-        <a href="{{ route('password.request') }}" class="text-sm text-indigo-400 hover:text-indigo-300">Forgot your password?</a>
-    </div>
-</form>
-
+            <a href="{{ route('password.request') }}" class="text-sm text-indigo-400 hover:text-indigo-300">Forgot your password?</a>
+        </div>
+    </form>
 </div>
 
         </div>
@@ -84,8 +110,6 @@
  
 
 </main>
-
-
 
 <!-- Footer -->
 <footer class="bg-gray-800 text-white py-10 px-4">
@@ -141,6 +165,35 @@
     </div>
 </footer>
 
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const passwordInput = document.getElementById("password");
+    const togglePassword = document.getElementById("toggle-password");
+    const eyeIcon = document.getElementById("eye-icon");
+
+    togglePassword.addEventListener("click", function () {
+        const isPassword = passwordInput.getAttribute("type") === "password";
+        passwordInput.setAttribute("type", isPassword ? "text" : "password");
+
+        // Update icon
+        eyeIcon.setAttribute(
+            "d",
+            isPassword
+                ? "M10 3c-3.866 0-7.092 2.66-8.294 6.4a1 1 0 000 .6C2.908 14.34 6.134 17 10 17s7.092-2.66 8.294-6.4a1 1 0 000-.6C17.092 5.66 13.866 3 10 3zM10 5c2.893 0 5.364 1.916 6.486 4.6C15.364 13.084 12.893 15 10 15s-5.364-1.916-6.486-4.6C4.636 6.916 7.107 5 10 5z"
+                : "M10 7a3 3 0 100 6 3 3 0 000-6z"
+        );
+    });
+});
+
+    </script>
 
 </body>
 </html>

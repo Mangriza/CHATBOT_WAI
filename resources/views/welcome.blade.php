@@ -20,14 +20,12 @@
     <script src="{{ asset('js/scroll.js') }}"></script> <!-- Tambahkan path file JS di sini -->
 </head>
 
-
-
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <!-- Header -->
     <header class="relative flex flex-wrap items-center justify-between p-4 bg-white text-gray-700">
     <!-- Logo & Name -->
     <div class="flex items-center space-x-3">
-        <img src="{{ asset('img/wai.png') }}" alt="Logo" class="h-10 w-auto">
+        <img src="{{ asset('img/WAI.png') }}" alt="Logo" class="h-10 w-auto">
     </div>
 
     <!-- Navigation Menu (hidden on small screens) -->
@@ -63,8 +61,6 @@
         <a href="{{ route('register') }}" class="block text-gray-700 hover:text-purple-500">Register</a>
     </div>
 </header>
-
-
 
     <!-- Main Section -->
     <main class="py-16 px-6 bg-gray-100">
@@ -123,7 +119,7 @@
     <div class="max-w-7xl mx-auto flex items-center justify-between">
         <!-- Kiri: Gambar chatting bot -->
         <div class="w-full sm:w-1/2">
-            <img src="{{ asset('img/logo.png') }}" alt="Chatting with Bot" class="w-full h-auto rounded-lg shadow-lg">
+            <img src="{{ asset('img/wai.png') }}" alt="Chatting with Bot" class="w-full h-auto rounded-lg shadow-lg">
         </div>
 
         <!-- Kanan: Teks Promosi & Button -->
@@ -142,48 +138,48 @@
 
 <section class="bg-gray-800 text-white py-16 px-6" data-aos="fade-up" id="ai">
     <div class="max-w-full mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-8">Meet Our AI Personalities</h2>
+        <h2 class="text-3xl font-bold mb-8">Temukan AI Sesuai Personalitasnya</h2>
 
         <!-- Container untuk gambar dengan scrollbar -->
         <div class="flex overflow-x-auto px-4" id="scroll-container">
             <!-- Card 1 -->
             <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="path/to/sifa_image.jpg" alt="Sifa AI" class="w-full h-80 object-cover mb-4 rounded">
+                <img src="img/sample_placeholder.png" alt="Sifa AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Sifa AI - The Empath</h3>
                 <p>Sifa AI is an understanding companion...</p>
             </div>
 
             <!-- Card 2 -->
             <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="path/to/darwin_image.jpg" alt="Darwin AI" class="w-full h-80 object-cover mb-4 rounded">
+                <img src="img/sample_placeholder.png" alt="Darwin AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Darwin AI - The Thinker</h3>
                 <p>Darwin AI is analytical and logical...</p>
             </div>
 
             <!-- Card 3 -->
             <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="path/to/a0pa_image.jpg" alt="A0pa AI" class="w-full h-80 object-cover mb-4 rounded">
+                <img src="img/sample_placeholder.png" alt="A0pa AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">A0pa AI - The Humorist</h3>
                 <p>A0pa AI brings humor and lightheartedness...</p>
             </div>
 
             <!-- Card 4 -->
             <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="path/to/zara_image.jpg" alt="Zara AI" class="w-full h-80 object-cover mb-4 rounded">
+                <img src="img/sample_placeholder.png" alt="Zara AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Zara AI - The Mentor</h3>
                 <p>Zara AI is a patient and wise guide...</p>
             </div>
 
             <!-- Card 5 -->
             <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="path/to/sifa_image.jpg" alt="Sifa AI" class="w-full h-80 object-cover mb-4 rounded">
+                <img src="img/sample_placeholder.png" alt="Sifa AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Sifa AI - The Empath</h3>
                 <p>Sifa AI is an understanding companion...</p>
             </div>
 
             <!-- Card 6 -->
             <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="path/to/darwin_image.jpg" alt="Darwin AI" class="w-full h-80 object-cover mb-4 rounded">
+                <img src="img/sample_placeholder.png" alt="Darwin AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Darwin AI - The Thinker</h3>
                 <p>Darwin AI is analytical and logical...</p>
             </div>
@@ -194,21 +190,21 @@
 <!-- Footer -->
 <footer class="bg-gray-700 text-white py-10 px-4" data-aos="fade-up">
     <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-8">Our Partners</h2>
+        <h2 class="text-3xl font-bold text-center mb-8">Partner Kami</h2>
 
         <!-- Logo Partner Section -->
         <div class="flex justify-center items-center gap-10 flex-wrap">
             <div>
-                <img src="{{ asset('img/logo.png') }}" alt="Partner 1" class="h-16 object-contain">
+                <img src="{{ asset('img/LOGO_DOANG.png') }}" alt="Partner 1" class="h-16 object-contain">
             </div>
             <div>
-                <img src="{{ asset('img/logo.png') }}" alt="Partner 2" class="h-16 object-contain">
+                <img src="{{ asset('img/gemini.png') }}" alt="Partner 2" class="h-16 object-contain">
             </div>
             <div>
-                <img src="{{ asset('img/logo.png') }}" alt="Partner 3" class="h-16 object-contain">
+                <img src="{{ asset('img/UpiLogo.png') }}" alt="Partner 3" class="h-16 object-contain">
             </div>
             <div>
-                <img src="{{ asset('img/logo.png') }}" alt="Partner 4" class="h-16 object-contain">
+                <img src="{{ asset('img/ctf.png') }}" alt="Partner 4" class="h-16 object-contain">
             </div>
         </div>
     </div>
@@ -278,6 +274,10 @@
             <div class="bg-white p-6 rounded-lg shadow-lg">
                 <h3 class="text-xl font-semibold mb-4">Dina</h3>
                 <p class="text-gray-600">“Fitur personalisasinya membuat chatbot ini terasa lebih hidup.”</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Hasan</h3>
+                <p class="text-gray-600">“Mantap!.”</p>
             </div>
         </div>
     </div>
@@ -360,7 +360,7 @@
             <div class="ml-4"> 
                 <h4 class="font-bold text-lg mb-4">Contact Us</h4>
                 <ul>
-                    <li><a href="mailto:contact@wai.com" class="hover:text-[#0000FF]">Email: contact@wai.com</a></li>
+                    <li><a href="mailto:contact@wai.com" class="hover:text-[#0000FF]">Email: ijotomat@wai.com</a></li>
                     <li><a href="tel:+1234567890" class="hover:text-[#0000FF]">Phone: +1 (234) 567-890</a></li>
                 </ul>
             </div>
@@ -399,8 +399,8 @@
 
         <!-- Bottom Section: Copyright -->
         <div class="text-center">
-            <p class="text-sm mb-2">© 2024 WAI - All Rights Reserved</p>
-            <p class="text-sm">For inquiries, contact us at <a href="mailto:contact@wai.com" class="underline hover:text-[#0000FF]">contact@wai.com</a></p>
+            <p class="text-sm mb-2">© 2024 WAI by IjoTomat - All Rights Reserved</p>
+            <p class="text-sm"> <a href="mailto:ijotomat@wai.com" class="underline hover:text-[#0000FF]">ijotomat@wai.com</a></p>
         </div>
     </div>
 </footer>
