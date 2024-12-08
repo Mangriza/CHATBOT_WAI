@@ -239,7 +239,7 @@
 <section class="bg-gray-100 py-10" data-aos="fade-up" id="ulasan">
     <div class="max-w-7xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-black mb-6">Fitur Utama Chatbot Kami</h2>
-        <p class="text-lg text-gray-700 mb-12">Nikmati pengalaman interaktif dengan chatbot bergaya anime yang siap membantu Anda kapan saja.</p>
+        <p class="text-lg text-gray-700 mb-12">Nikmati pengalaman interaktif dengan chatbot bergaya anime yang siap menemani Anda kapan saja.</p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
@@ -371,7 +371,7 @@
             <img src="{{ asset('img/AWN.jpeg') }}" alt="Akbar" class="w-24 h-24 rounded-full mx-auto mb-4">
             <h3 class="text-lg font-semibold text-gray-800">Akbar Wira Nugraha</h3>
             <p class="text-sm text-gray-600">AI Engineer</p>
-            <p class="text-sm text-gray-500 italic mb-4">"Aku Suka Tobrut"</p>
+            <p class="text-sm text-gray-500 italic mb-4">"Pucuk ubi pucuk kangkung...."</p>
             <div class="flex justify-center space-x-4 text-gray-500">
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
@@ -397,20 +397,20 @@
             <img src="{{ asset('img/ajril.jpeg') }}" alt="Faizal" class="w-24 h-24 rounded-full mx-auto mb-4">
             <h3 class="text-lg font-semibold text-gray-800">Faizal Azzriel Gibar</h3>
             <p class="text-sm text-gray-600">Frontend Developer</p>
-            <p class="text-sm text-gray-500 italic mb-4">"Aku Butuh Medkit"</p>
+            <p class="text-sm text-gray-500 italic mb-4">"Semua pekerjaan itu mudah bila tidak dikerjakan."</p>
             <div class="flex justify-center space-x-4 text-gray-500">
-                <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="hover:text-gray-700"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/fzlazzgbr/profilecard/?igsh=MWNkYmJmMGFxYngxYg==" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/faizal-azzriel-g?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Kamikaze070104" class="hover:text-gray-700"><i class="fab fa-github"></i></a>
             </div>
         </div>
 
         <!-- Member 4 -->
         <div class="text-center bg-gray-100 shadow-md rounded-lg p-6">
-            <img src="{{ asset('img/kucing.png') }}" alt="Saeful" class="w-24 h-24 rounded-full mx-auto mb-4">
+            <img src="{{ asset('img/sample_placeholder.png') }}" alt="Saeful" class="w-24 h-24 rounded-full mx-auto mb-4">
             <h3 class="text-lg font-semibold text-gray-800">Saeful RIzal</h3>
             <p class="text-sm text-gray-600">Mental Health</p>
-            <p class="text-sm text-gray-500 italic mb-4">"Gawean Bisi di Dodet"</p>
+            <p class="text-sm text-gray-500 italic mb-4">"Hai, Saya menggunakan WhatsApp!"</p>
             <div class="flex justify-center space-x-4 text-gray-500">
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
@@ -428,6 +428,9 @@
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-facebook"></i></a>
             </div>
         </div>
     </div>
