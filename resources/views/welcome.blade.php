@@ -86,15 +86,15 @@
       <!-- Foto di bawah -->
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-8" data-aos="fade-up">
     <div class="text-center">
-        <img src="https://via.placeholder.com/250" alt="Foto 1" class="w-full h-64 object-cover rounded-lg shadow-lg">
+        <img src="img/contoh01.png" alt="Foto 1" class="w-full h-64 object-cover rounded-lg shadow-lg">
         <p class="mt-2 text-gray-600">Tampilan Antarmuka Chatbot - Mudah digunakan dan interaktif.</p>
     </div>
     <div class="text-center">
-        <img src="https://via.placeholder.com/250" alt="Foto 2" class="w-full h-64 object-cover rounded-lg shadow-lg">
+        <img src="img/contoh02.png" alt="Foto 2" class="w-full h-64 object-cover rounded-lg shadow-lg">
         <p class="mt-2 text-gray-600">Fitur Personalisasi - Sesuaikan gaya chatbot sesuai keinginan Anda.</p>
     </div>
     <div class="text-center">
-        <img src="https://via.placeholder.com/250" alt="Foto 3" class="w-full h-64 object-cover rounded-lg shadow-lg">
+        <img src="img/contoh03.png" alt="Foto 3" class="w-full h-64 object-cover rounded-lg shadow-lg">
         <p class="mt-2 text-gray-600">Percakapan dengan Chatbot - Interaksi yang menyenangkan dan responsif.</p>
     </div>
 </div>
@@ -147,44 +147,37 @@
         <div class="flex overflow-x-auto px-4" id="scroll-container">
             <!-- Card 1 -->
             <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="img/sample_placeholder.png" alt="Sifa AI" class="w-full h-80 object-cover mb-4 rounded">
+                <img src="img/assets/vtb05.png" alt="Sifa AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Sifa AI - The Empath</h3>
                 <p>Sifa AI is an understanding companion...</p>
             </div>
 
             <!-- Card 2 -->
             <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="img/sample_placeholder.png" alt="Darwin AI" class="w-full h-80 object-cover mb-4 rounded">
+                <img src="img/assets/vtb04.png" alt="Darwin AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Darwin AI - The Thinker</h3>
                 <p>Darwin AI is analytical and logical...</p>
             </div>
 
             <!-- Card 3 -->
             <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="img/sample_placeholder.png" alt="A0pa AI" class="w-full h-80 object-cover mb-4 rounded">
+                <img src="img/assets/vtb03.png" alt="A0pa AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">A0pa AI - The Humorist</h3>
                 <p>A0pa AI brings humor and lightheartedness...</p>
             </div>
 
             <!-- Card 4 -->
             <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="img/sample_placeholder.png" alt="Zara AI" class="w-full h-80 object-cover mb-4 rounded">
+                <img src="img/assets/vtb02.png" alt="Zara AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Zara AI - The Mentor</h3>
                 <p>Zara AI is a patient and wise guide...</p>
             </div>
 
             <!-- Card 5 -->
             <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="img/sample_placeholder.png" alt="Sifa AI" class="w-full h-80 object-cover mb-4 rounded">
+                <img src="img/assets/vtb01.png" alt="Sifa AI" class="w-full h-80 object-cover mb-4 rounded">
                 <h3 class="text-xl font-semibold mb-4">Sifa AI - The Empath</h3>
                 <p>Sifa AI is an understanding companion...</p>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="flex-shrink-0 w-96 bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
-                <img src="img/sample_placeholder.png" alt="Darwin AI" class="w-full h-80 object-cover mb-4 rounded">
-                <h3 class="text-xl font-semibold mb-4">Darwin AI - The Thinker</h3>
-                <p>Darwin AI is analytical and logical...</p>
             </div>
         </div>
     </div>
@@ -220,7 +213,7 @@
     <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-black mb-6">Tonton Demo Chatbot Kami</h2>
         <video class="w-full h-auto rounded-lg shadow-lg" controls>
-            <source src="video-demo.mp4" type="video/mp4">
+            <source src="img/video/demovideo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
