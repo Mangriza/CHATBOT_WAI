@@ -76,7 +76,8 @@
         <!-- Teks "With AI" dan Deskripsi dalam dua bagian terpisah -->
         <div class="pl-4">
             <p class="text-lg text-gray-700 mt-4" data-aos="fade-right">
-                Nikmati pengalaman unik dengan WAI, aplikasi yang menyajikan chatbot bergaya anime, siap memberikan bantuan dan solusi efisien dalam setiap langkah Anda
+                Biaya psikologi mahal? gak ada someone to talk? terus kamu jomblo? tenang, WAI hadir untuk kamu!
+                ada banyak pilihan AI dengan berbeda beda sifat dan karakternya masing masing lho! 
             </p>
         </div>
     </div>
@@ -191,7 +192,7 @@
         <!-- Logo Partner Section -->
         <div class="flex justify-center items-center gap-10 flex-wrap">
             <div>
-                <img src="{{ asset('img/LOGO_DOANG.png') }}" alt="Partner 1" class="h-16 object-contain">
+                <img src="{{ asset('img/awn.png') }}" alt="Partner 1" class="h-16 object-contain">
             </div>
             <div>
                 <img src="{{ asset('img/gemini.png') }}" alt="Partner 2" class="h-16 object-contain">
@@ -364,7 +365,7 @@
             <img src="{{ asset('img/AWN.jpeg') }}" alt="Akbar" class="w-24 h-24 rounded-full mx-auto mb-4">
             <h3 class="text-lg font-semibold text-gray-800">Akbar Wira Nugraha</h3>
             <p class="text-sm text-gray-600">AI Engineer</p>
-            <p class="text-sm text-gray-500 italic mb-4">"Pucuk ubi pucuk kangkung...."</p>
+            <p class="text-sm text-gray-500 italic mb-4">"Gak kepo tapi tau banyak info?"</p>
             <div class="flex justify-center space-x-4 text-gray-500">
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
@@ -377,7 +378,7 @@
             <img src="{{ asset('img/buceri.jpeg') }}" alt="Riza" class="w-24 h-24 rounded-full mx-auto mb-4">
             <h3 class="text-lg font-semibold text-gray-800">M Riza Buccharelli</h3>
             <p class="text-sm text-gray-600">Backend Developer</p>
-            <p class="text-sm text-gray-500 italic mb-4">"Kelas Wir"</p>
+            <p class="text-sm text-gray-500 italic mb-4">"Teuing ah"</p>
             <div class="flex justify-center space-x-4 text-gray-500">
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
@@ -390,7 +391,7 @@
             <img src="{{ asset('img/ajril.jpeg') }}" alt="Faizal" class="w-24 h-24 rounded-full mx-auto mb-4">
             <h3 class="text-lg font-semibold text-gray-800">Faizal Azzriel Gibar</h3>
             <p class="text-sm text-gray-600">Frontend Developer</p>
-            <p class="text-sm text-gray-500 italic mb-4">"Semua pekerjaan itu mudah bila tidak dikerjakan."</p>
+            <p class="text-sm text-gray-500 italic mb-4">"Dikasih cobaan malah dicobain."</p>
             <div class="flex justify-center space-x-4 text-gray-500">
                 <a href="https://www.instagram.com/fzlazzgbr/profilecard/?igsh=MWNkYmJmMGFxYngxYg==" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/faizal-azzriel-g?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
@@ -400,10 +401,10 @@
 
         <!-- Member 4 -->
         <div class="text-center bg-gray-100 shadow-md rounded-lg p-6">
-            <img src="{{ asset('img/sample_placeholder.png') }}" alt="Saeful" class="w-24 h-24 rounded-full mx-auto mb-4">
-            <h3 class="text-lg font-semibold text-gray-800">Saeful RIzal</h3>
-            <p class="text-sm text-gray-600">Mental Health</p>
-            <p class="text-sm text-gray-500 italic mb-4">"Hai, Saya menggunakan WhatsApp!"</p>
+            <img src="{{ asset('img/ipul.png') }}" alt="Saeful" class="w-24 h-24 rounded-full mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Saeful Rizal</h3>
+            <p class="text-sm text-gray-600">AI Design Model</p>
+            <p class="text-sm text-gray-500 italic mb-4">"tah geus png jon atur we!"</p>
             <div class="flex justify-center space-x-4 text-gray-500">
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
@@ -424,6 +425,8 @@
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-whatsapp"></i></a>
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-tiktok"></i></a>
                 <a href="#" class="hover:text-gray-700"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-skype"></i></a>
             </div>
         </div>
     </div>
