@@ -198,7 +198,10 @@
                 <img src="{{ asset('img/gemini.png') }}" alt="Partner 2" class="h-16 object-contain">
             </div>
             <div>
-                <img src="{{ asset('img/UpiLogo.png') }}" alt="Partner 3" class="h-16 object-contain">
+                <img src="{{ asset('img/sunda.png') }}" alt="Partner 3" class="h-16 object-contain">
+            </div>
+            <div>
+                <img src="{{ asset('img/kings.jpeg') }}" alt="Partner 3" class="h-16 object-contain">
             </div>
             <div>
                 <img src="{{ asset('img/ctf.png') }}" alt="Partner 4" class="h-16 object-contain">
