@@ -9,6 +9,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -351,27 +353,111 @@
     </div>
 </section>
 
+<section class="py-16 px-6 bg-white" id="team">
+    <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4 text-gray-800">Temui Tim IjoTomat Dev</h2>
+        <p class="text-lg text-gray-600 mb-8">
+            Tim kami yang berdedikasi dan berpengalaman siap memberikan yang terbaik untuk Anda di ChatBot With-AI.
+        </p>
+        <p class="text-lg text-gray-600">
+            Kami akan terus mengembangkan aplikasi ini sesuai kebutuhan pasar. Kami juga akan terus memberikan update terbaru untuk memenuhi kebutuhan pengguna.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
+        <!-- Member 1 -->
+        <div class="text-center bg-gray-100 shadow-md rounded-lg p-6">
+            <img src="{{ asset('img/AWN.jpeg') }}" alt="Akbar" class="w-24 h-24 rounded-full mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Akbar Wira Nugraha</h3>
+            <p class="text-sm text-gray-600">AI Engineer</p>
+            <p class="text-sm text-gray-500 italic mb-4">"Aku Suka Tobrut"</p>
+            <div class="flex justify-center space-x-4 text-gray-500">
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="text-center bg-gray-100 shadow-md rounded-lg p-6">
+            <img src="{{ asset('img/buceri.jpeg') }}" alt="Riza" class="w-24 h-24 rounded-full mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">M Riza Buccharelli</h3>
+            <p class="text-sm text-gray-600">Backend Developer</p>
+            <p class="text-sm text-gray-500 italic mb-4">"Kelas Wir"</p>
+            <div class="flex justify-center space-x-4 text-gray-500">
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="text-center bg-gray-100 shadow-md rounded-lg p-6">
+            <img src="{{ asset('img/ajril.jpeg') }}" alt="Faizal" class="w-24 h-24 rounded-full mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Faizal Azzriel Gibar</h3>
+            <p class="text-sm text-gray-600">Frontend Developer</p>
+            <p class="text-sm text-gray-500 italic mb-4">"Aku Butuh Medkit"</p>
+            <div class="flex justify-center space-x-4 text-gray-500">
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="text-center bg-gray-100 shadow-md rounded-lg p-6">
+            <img src="{{ asset('img/kucing.png') }}" alt="Saeful" class="w-24 h-24 rounded-full mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Saeful RIzal</h3>
+            <p class="text-sm text-gray-600">Mental Health</p>
+            <p class="text-sm text-gray-500 italic mb-4">"Gawean Bisi di Dodet"</p>
+            <div class="flex justify-center space-x-4 text-gray-500">
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Member 5 -->
+        <div class="text-center bg-gray-100 shadow-md rounded-lg p-6">
+            <img src="{{ asset('img/hasan.jpeg') }}" alt="Hasan" class="w-24 h-24 rounded-full mx-auto mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">M Hasanuddin Ali</h3>
+            <p class="text-sm text-gray-600">Project Manager</p>
+            <p class="text-sm text-gray-500 italic mb-4">"Rada Di Kopikeun Heula Iyeumah"</p>
+            <div class="flex justify-center space-x-4 text-gray-500">
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-gray-700"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 </main>
 
 
    <!-- Footer -->
-<footer class="bg-gray-800 text-white py-10 px-4" data-aos="fade-in-up" id="contact">
+<footer class="bg-gray-800 text-white py-10 px-6" data-aos="fade-in-up" id="contact">
     <div class="max-w-7xl mx-auto">
         <!-- Top Section: Contact and Social Media Links -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 ml-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
             <!-- Contact Info -->
-            <div class="ml-4"> 
+            <div>
                 <h4 class="font-bold text-lg mb-4">Contact Us</h4>
-                <ul>
-                    <li><a href="mailto:contact@wai.com" class="hover:text-[#0000FF]">Email: ijotomat@wai.com</a></li>
-                    <li><a href="tel:+1234567890" class="hover:text-[#0000FF]">Phone: +1 (234) 567-890</a></li>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="mailto:contact@wai.com" class="hover:text-[#0000FF] block">Email: ijotomat@wai.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+1234567890" class="hover:text-[#0000FF] block">Phone: +1 (234) 567-890</a>
+                    </li>
                 </ul>
             </div>
 
             <!-- Social Media Links -->
-            <div class="ml-4"> 
+            <div>
                 <h4 class="font-bold text-lg mb-4">Follow Us</h4>
-                <ul>
+                <ul class="space-y-2">
                     <li><a href="https://www.instagram.com" class="hover:text-[#0000FF]" target="_blank">Instagram</a></li>
                     <li><a href="https://www.twitter.com" class="hover:text-[#0000FF]" target="_blank">Twitter</a></li>
                     <li><a href="https://www.facebook.com" class="hover:text-[#0000FF]" target="_blank">Facebook</a></li>
@@ -380,9 +466,9 @@
             </div>
 
             <!-- Resources Section -->
-            <div class="ml-4"> 
+            <div>
                 <h4 class="font-bold text-lg mb-4">Resources</h4>
-                <ul>
+                <ul class="space-y-2">
                     <li><a href="#" class="hover:text-[#0000FF]">Documentation</a></li>
                     <li><a href="#" class="hover:text-[#0000FF]">Blog</a></li>
                     <li><a href="#" class="hover:text-[#0000FF]">API Reference</a></li>
@@ -390,9 +476,9 @@
             </div>
 
             <!-- References Section -->
-            <div class="ml-4"> 
+            <div>
                 <h4 class="font-bold text-lg mb-4">References</h4>
-                <ul>
+                <ul class="space-y-2">
                     <li><a href="#" class="hover:text-[#0000FF]">Tutorials</a></li>
                     <li><a href="#" class="hover:text-[#0000FF]">Case Studies</a></li>
                     <li><a href="#" class="hover:text-[#0000FF]">Whitepapers</a></li>
@@ -403,10 +489,13 @@
         <!-- Bottom Section: Copyright -->
         <div class="text-center">
             <p class="text-sm mb-2">© 2024 WAI by IjoTomat - All Rights Reserved</p>
-            <p class="text-sm"> <a href="mailto:ijotomat@wai.com" class="underline hover:text-[#0000FF]">ijotomat@wai.com</a></p>
+            <p class="text-sm">
+                <a href="mailto:ijotomat@wai.com" class="underline hover:text-[#0000FF]">ijotomat@wai.com</a>
+            </p>
         </div>
     </div>
 </footer>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

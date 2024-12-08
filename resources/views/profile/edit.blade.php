@@ -22,49 +22,79 @@
 
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <!-- Header -->
-    <header class="flex justify-between items-center p-4 bg-gray-800 text-white">
-        <div class="flex items-center space-x-3">
-            <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-10 w-15">
-            <span class="font-semibold text-2xl">With AI</span>
-        </div>
-        <div class="space-x-4 flex items-center">
-            <!-- Profile Button -->
-            <a href="{{ route('dashboard') }}" class="text-white hover:text-gray-400">Dashboard</a>
+<header class="relative flex flex-wrap items-center justify-between p-4 bg-white text-gray-700">
+    <!-- Logo & Name -->
+    <div class="flex items-center space-x-3">
+        <img src="{{ asset('img/WAI.png') }}" alt="Logo" class="h-10 w-auto">
+    </div>
 
-            <!-- Logout Button -->
-            <form method="POST" action="{{ route('logout') }}">
+    <!-- Log In / Register (hidden on small screens) -->
+    <div class="hidden md:flex space-x-4">
+        <a href="{{ route('dashboard') }}" class="text-gray-700 hover:text-purple-500">Dashboard</a>
+<form method="POST" action="{{ route('logout') }}">
                 @csrf
-                <button type="submit" class="text-white hover:text-gray-400">Log Out</button>
+                <button type="submit" class="text-gray-700 hover:text-purple-500">Log Out</button>
             </form>
-        </div>
-    </header>
+    </div>
 
-    <main class="py-16 px-6 bg-white">
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+    </button>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-gray-300 flex-col space-y-2 py-4 px-4 shadow-lg">
+        <a href="{{ route('dashboard') }}" class="block text-gray-700 hover:text-purple-500">Dashboard</a>
+<form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="text-gray-700 hover:text-purple-500">Log Out</button>
+            </form>
+    </div>
+</header>
+
+    <main class="py-16 px-6 bg-gray-100">
     <div class="max-w-7xl mx-auto">
         <div class="flex items-center justify-between mb-10">
 
             <!-- Profile Edit Form Content -->
-            <div class="max-w-xl mx-auto bg-gray-800 p-8 shadow-2xl rounded-lg">
-                <h2 class="text-3xl font-semibold mb-6 text-center text-white">Edit Your Profile</h2>
-                <p class="text-center text-gray-100">
-                    {{ __("Update your profile information.") }}
-                </p>
+            <div class="max-w-2xl mx-auto bg-white dark:bg-gray-800 p-8 shadow-xl rounded-lg">
+    <h2 class="text-3xl font-semibold mb-4 text-center text-gray-800 dark:text-gray-200">
+        {{ __("Edit Your Profile") }}
+    </h2>
+    <p class="text-center text-gray-600 dark:text-gray-400 mb-6">
+        {{ __("Keep your profile up-to-date for a better experience.") }}
+    </p>
 
-                <!-- Profile Information Form -->
-                <div class="mt-6">
-                    @include('profile.partials.update-profile-information-form')
-                </div>
+    <!-- Profile Information Form -->
+    <div class="mt-6 bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-sm">
+        <h3 class="text-lg font-medium text-gray-700 dark:text-gray-300 mb-3">
+            {{-- {{ __("Profile Information") }} --}}
+        </h3>
+        @include('profile.partials.update-profile-information-form')
+    </div>
 
-                <!-- Password Update Form -->
-                <div class="mt-6">
-                    @include('profile.partials.update-password-form')
-                </div>
+    <!-- Password Update Form -->
+    <div class="mt-6 bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-sm">
+        <h3 class="text-lg font-medium text-gray-700 dark:text-gray-300 mb-3">
+            {{-- {{ __("Update Password") }} --}}
+        </h3>
+        @include('profile.partials.update-password-form')
+    </div>
 
-                <!-- Delete User Form -->
-                <div class="mt-6">
-                    @include('profile.partials.delete-user-form')
-                </div>
-            </div>
+    <!-- Delete User Form -->
+    <div class="mt-6 bg-red-100 dark:bg-red-700 p-6 rounded-lg shadow-sm">
+        <h3 class="text-lg font-medium text-red-700 dark:text-red-300 mb-3">
+            {{-- {{ __("Delete Account") }} --}}
+        </h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+            {{-- {{ __("Once you delete your account, there is no going back. Please be certain.") }} --}}
+        </p>
+        @include('profile.partials.delete-user-form')
+    </div>
+</div>
+
         </div>
     </div>
 </main>
@@ -123,6 +153,15 @@
         </div>
     </div>
 </footer>
+
+<script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>
