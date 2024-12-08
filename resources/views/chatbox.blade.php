@@ -49,22 +49,16 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <!-- Left Section -->
         <div class="left-section">
             <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-40 w-auto">
         </div>
-            <!-- Right Section -->
             <div class="right-section">
                 <div class="bg-white p-6 shadow-md rounded-lg h-full">
                     
                     <h2 class="text-2xl font-bold mb-4">Chat with {{ ucfirst($model) }}</h2>
-
-                    <!-- Form to end the session -->
                     <div class="flex justify-end mb-4">
 
                     </div>
-
-                    <!-- Chatbox messages -->
                     <div id="chatbox" class="bg-gray-100 p-4 h-96 overflow-y-scroll rounded-lg mb-4">
                         @if (empty($messages))
                             <p class="text-center text-gray-500">No messages yet.</p>
@@ -76,8 +70,6 @@
                             @endforeach
                         @endif
                     </div>
-
-                    <!-- Form to send a message -->
                     <form action="{{ route('chatbox.store', $model) }}" method="POST" class="flex mb-4">
                         @csrf
                         <input type="text" name="message" class="flex-grow p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type your message...">
@@ -98,9 +90,7 @@
     <!-- Footer -->
 <footer class="bg-gray-800 text-white py-10 px-4">
     <div class="max-w-7xl mx-auto">
-        <!-- Top Section: Contact and Social Media Links -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 ml-10">
-            <!-- Contact Info -->
             <div class="ml-4"> 
                 <h4 class="font-bold text-lg mb-4">Contact Us</h4>
                 <ul>
@@ -108,8 +98,6 @@
                     <li><a href="tel:+1234567890" class="hover:text-[#0000FF]">Phone: +1 (234) 567-890</a></li>
                 </ul>
             </div>
-
-            <!-- Social Media Links -->
             <div class="ml-4"> 
                 <h4 class="font-bold text-lg mb-4">Follow Us</h4>
                 <ul>
@@ -119,8 +107,6 @@
                     <li><a href="https://www.linkedin.com" class="hover:text-[#0000FF]" target="_blank">LinkedIn</a></li>
                 </ul>
             </div>
-
-            <!-- Resources Section -->
             <div class="ml-4"> 
                 <h4 class="font-bold text-lg mb-4">Resources</h4>
                 <ul>
@@ -129,8 +115,6 @@
                     <li><a href="#" class="hover:text-[#0000FF]">API Reference</a></li>
                 </ul>
             </div>
-
-            <!-- References Section -->
             <div class="ml-4"> 
                 <h4 class="font-bold text-lg mb-4">References</h4>
                 <ul>
@@ -140,8 +124,6 @@
                 </ul>
             </div>
         </div>
-
-        <!-- Bottom Section: Copyright -->
         <div class="text-center">
             <p class="text-sm mb-2">© 2024 WAI - All Rights Reserved</p>
             <p class="text-sm">For inquiries, contact us at <a href="mailto:contact@wai.com" class="underline hover:text-[#0000FF]">contact@wai.com</a></p>

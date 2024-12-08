@@ -76,7 +76,7 @@
         <!-- Submit Button -->
         <div class="flex items-center justify-between mt-6">
                 <button type="submit" class="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-purple-500 transition-all duration-200 ease-in-out focus:outline-none">
-                Confirm
+                {{ __('Confirm') }}
             </button>
         </div>
     </form>
